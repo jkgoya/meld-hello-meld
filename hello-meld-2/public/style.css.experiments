@@ -1,0 +1,36 @@
+body { 
+  font-family: sans-serif;
+  user-select: none;
+}
+
+.selected {
+  fill:darkorange;
+  stroke:darkorange;
+}
+
+div.renderscorepane {
+  display: none;
+}
+
+
+div.renderscorepane:first_line {
+  display: block;
+  content: 'Add Rendering...' ;
+}
+
+/*
+div.wrapscorepane:empty + div.renderscorepane {
+	display: block;
+	content: 'Add rendering...' ;
+}
+
+:not(div.wrapscorepane:empty + div.renderscorepane) {
+    display: none;
+}
+*/
+
+/*
+.wrapscorepane:empty:before {
+	content: 'Rendering...' ;
+}
+*/

@@ -22,12 +22,17 @@ const vrvOptions = {
   unit: 6
 }
 
-
 ReactDOM.render(
-  <Provider store={createStoreWithMiddleware(reducers)}>
+  <div>
     <h1>Hello MELD (2)</h1>
-    <Score uri = { MEI_URI } key="xyzzy" vrvOptions = { vrvOptions }/>
-  </Provider>
+    <div className="wrapscorepane">
+      <Provider store={createStoreWithMiddleware(reducers)}>
+        <Score uri = { MEI_URI } options = { vrvOptions } />
+      </Provider>
+      <div className="renderscorepane">
+      </div>
+    </div>
+  </div>
   , document.querySelector('.container')
 );
 
