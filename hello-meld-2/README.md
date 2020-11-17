@@ -2,7 +2,7 @@
 
 This is the second minimal "Hello MELD" app.  It loads and displays an MEI-encoded score using the MELD core react libraries.
 
-The code is based on `hello-meld-1`, which in turn is a stripped-down version of [TROMPA's `selectable-=score-demo`](https://github.com/trompamusic/selectable-score-demo).
+The code is based on `hello-meld-1`, which in turn is a stripped-down version of [TROMPA's `selectable-score-demo`](https://github.com/trompamusic/selectable-score-demo).
 
 There is also a dependency on Apple's XCode, and requires to agree licences:
 
