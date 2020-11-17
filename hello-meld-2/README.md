@@ -31,5 +31,5 @@ There is also a dependency on Apple's XCode, and requires to agree licences:
 
         npm start
 
-6. Broewse to http://localhost:8080
+6. Browse to http://localhost:8080
 
