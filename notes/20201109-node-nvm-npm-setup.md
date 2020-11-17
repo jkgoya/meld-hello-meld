@@ -19,7 +19,7 @@ If nvm is not present, the following command installs `nvm` (to `$HOME/.nvm`?):
 
 Set `NVM_HOME` to point where `nvm` has been installed; e.g.
 
-    export NVM_DIR="$HOME/.nvm"
+   export NVM_DIR="$HOME/.nvm" 
 
 To activate `nvm` installed in directory `$NVM_HOME`, use:
 
