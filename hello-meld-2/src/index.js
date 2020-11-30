@@ -10,8 +10,9 @@ import Score from 'meld-clients-core/lib/containers/score';
 
 const createStoreWithMiddleware = applyMiddleware(thunk, ReduxPromise)(createStore);
 
+const MEI_URI = "Hello_MELD.mei" 
+
 // Options coped from selectable-score-demo...
-const MEI_URI = "test.mei" 
 // vrvOptions: If not supplied to <SelectableScore>, will default to predefined options
 const vrvOptions = {  
   scale: 45,

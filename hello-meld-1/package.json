@@ -6,14 +6,17 @@
   "scripts": {
     "start": "PORT=8080 react-scripts start",
     "build": "babel src --out-dir lib",
-    "build-dev": "babel src --out-dir lib --source-maps inline"
+    "build-dev": "babel src --out-dir lib --source-maps inline",
+    "test": "mocha tests/test-hello-meld.js"
   },
   "author": "Graham Klyne",
   "license": "BSD-3-Clause",
   "devDependencies": {
     "@babel/cli": "^7.6.0",
     "@babel/core": "^7.6.0",
-    "@babel/preset-react": "^7.0.0"
+    "@babel/preset-react": "^7.0.0",
+    "chai": "^4.2.0",
+    "sinon": "^9.2.1"
   },
   "dependencies": {
     "@solid/react": "^1.9.0",
