@@ -16,8 +16,27 @@
     "fibers": "^4.0.2",
     "meld-clients-core": "oerc-music/meld-clients-core#dev-meld-2.0"
   },
-  "devDependencies": {
-    "@babel/cli": "^7.8.4"
+  "old-devDependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.9.0",
+    "@babel/preset-react": "^7.9.1"
+  },
+  "old-dependencies": {
+    "node-sass": "^4.13.1",
+    "prop-types": "^15.7.2",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.0",
+    "react-native": "^0.63.3",
+    "react-native-web": "^0.13.18",
+    "react-player": "^1.11.0",
+    "react-redux": "^7.2.0",
+    "react-router-dom": "^4.3.1",
+    "react-scripts": "^3.1.1",
+    "redux": "^4.0.5",
+    "redux-promise": "^0.6.0",
+    "redux-thunk": "^2.3.0",
+    "sass": "^1.26.3",
+    "typescript": "^3.8.3"
   },
   "browserslist": {
     "production": [

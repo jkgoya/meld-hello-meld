@@ -27,6 +27,13 @@ There is also a dependency on Apple's XCode, and requires to agree licences:
 
         npm install
 
+   The following may also be required:
+
+        cd node_modules/meld-core-clients
+        npm run build
+        cd ../..
+
+
 5. Run the server:
 
         npm start

@@ -30,7 +30,7 @@ The code is a stripped-down version of [TROMPA's `selectable-=score-demo`](https
 
 1. Activate node (see activate-node.sh in parent directory).
 
-2. Install mocha command globvally:
+2. Install mocha command globally:
 
         npm install -g mocha
 
