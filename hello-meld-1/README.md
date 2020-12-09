@@ -43,8 +43,6 @@ The code is a stripped-down version of [TROMPA's `selectable-=score-demo`](https
 
 
 
-
-
 ## Testing notes
 
 - https://reactjs.org/docs/testing.html

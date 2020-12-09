@@ -40,3 +40,25 @@ There is also a dependency on Apple's XCode, and requires to agree licences:
 
 6. Browse to http://localhost:8080
 
+
+
+## Running with local copy of meld-clients-core project files
+
+1. In local copy of meld-clients-core:
+
+        npm install
+        npm run build
+        npm link
+        rm package-lock.js
+        rm -rf node_modules
+
+2. In hello-meld-2 project
+
+        # rm package-lock.js
+        # rm -rf node_modules
+        npm install
+        npm link meld-clients-core  # Note: after install?
+        npm start
+
+@@TEST these instructions again
+

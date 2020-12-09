@@ -20,4 +20,26 @@ npm WARN deprecated @hapi/topo@3.1.6: This version has been deprecated and is no
 npm WARN deprecated @hapi/hoek@8.5.1: This version has been deprecated and is no longer supported or maintained
 ```
 
- 
+
+request has been deprecated, see https://github.com/request/request/issues/3142
+
+deprecated har-validator@5.1.5: this library is no longer supported
+
+deprecated core-js@2.6.12: core-js@<3 is no longer maintained and not recommended for usage due to the number of issues. Please, upgrade your dependencies to the actual version of core-js@3.
+
+deprecated eslint-loader@3.0.3: This loader has been deprecated. Please use eslint-webpack-plugin
+
+request-promise-native has been deprecated because it extends the now deprecated request package, see https://github.com/request/request/issues/3142
+
+deprecated @hapi/joi@15.1.1: Switch to 'npm install joi'
+
+deprecated @hapi/bourne@1.3.2: This version has been deprecated and is no longer supported or maintained
+
+deprecated @hapi/address@2.1.4: Moved to 'npm install @sideway/address'
+
+deprecated @hapi/topo@3.1.6: This version has been deprecated and is no longer supported or maintained
+
+deprecated @hapi/hoek@8.5.1: This version has been deprecated and is no longer supported or maintained
+
+
+
