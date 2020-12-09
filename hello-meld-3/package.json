@@ -1,0 +1,36 @@
+{
+  "name": "hello-meld-3",
+  "version": "0.0.1",
+  "description": "Hello MELD demo app (3)",
+  "author": "Graham Klyne (at least that's who we'll blame)",
+  "license": "BSD-3-Clause",
+  "main": "index.js",
+  "scripts": {
+    "start": "PORT=8080 react-scripts start",
+    "build": "babel src --out-dir lib",
+    "build-dev": "babel src --out-dir lib --source-maps inline"
+  },
+  "dependencies": {
+    "react": "^16.13.0",
+    "react-dom": "^16.13.0",
+    "react-redux": "^7.2.0",
+    "browserslist": "^4.11.0",
+    "fibers": "^4.0.2",
+    "meld-clients-core": "oerc-music/meld-clients-core#dev-meld-2.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.8.4"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
