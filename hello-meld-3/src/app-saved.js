@@ -50,46 +50,53 @@ class App extends Component {
 		}
 	}
 
+	REMOVE_ME_componentWillMount() {
+		// https://reactjs.org/docs/react-component.html#unsafe_componentwillmount
+		// @@NOTE: deprecated
+		this.props.setTraversalObjectives([
+			{
+				"@type": pref.meldterm + "MEIManifestation"
+			},
+			{
+				"@type": pref.meldterm + "AudioManifestation"
+			}
+		]);
+	}
+
 	componentDidUpdate(prevProps, prevState){
 		// See: https://reactjs.org/docs/react-component.html#componentdidupdate
 		if(prevProps && "graph" in prevProps) {
-            if ( this.graphComponentDidUpdate(this.props, prevProps, prevState ) ) {
-                var mp3, mei;
-                if(this.props.graph.outcomes && this.props.graph.outcomes[0]
-                     && this.props.graph.outcomes[0]['@graph'].length){
-                    mei = this.props.graph.outcomes[0]['@graph'][0]['@id'];
-                }
-                if(this.props.graph.outcomes && this.props.graph.outcomes[1]
-                     && this.props.graph.outcomes[1]['@graph'].length){
-                    mp3 = this.props.graph.outcomes[1]['@graph'][0]['@id'];
-                }
-                this.setState({ mp3_uri: mp3, mei_uri: mei });
-            }
-	    }
+			if(prevProps.traversalPool.running === 1 && this.props.traversalPool.running ===0){
+				// check our traversal objectives if the graph has updated
+				this.props.checkTraversalObjectives(this.props.graph.graph, this.props.graph.objectives);
+				console.log(prevProps.graph.outcomesHash, this.props.graph.outcomesHash);
+				this.updateMedia();
+			} else if(Object.keys(this.props.traversalPool.pool).length && this.props.traversalPool.running < MAX_TRAVERSERS) {
+				var uri = Object.keys(this.props.traversalPool.pool)[0];
+				this.props.traverse(uri, this.props.traversalPool.pool[uri]);
+				if(prevProps.graph.outcomesHash !== this.props.graph.outcomesHash) {
+					this.updateMedia();
+				}
+			} else if(this.props.traversalPool.running===0) {
+				if(prevProps.graph.outcomesHash !== this.props.graph.outcomesHash) {
+					this.updateMedia();
+				}
+			}
+		}				
 	}
 
-    graphComponentDidUpdate(props, prevProps, prevState) {
-        var prevPool = prevProps.traversalPool;
-        var thisPool = props.traversalPool;
-        var updated  = false;
-        if (prevPool.running === 1 && thisPool.running ===0){
-            // check our traversal objectives if the graph has updated
-            props.checkTraversalObjectives(
-                props.graph.graph, props.graph.objectives);
-            updated = true;
-        } else if ( Object.keys(thisPool.pool).length && thisPool.running < MAX_TRAVERSERS) {
-            // Initiate next traverser in pool...
-            var uri = Object.keys(thisPool.pool)[0];
-            props.traverse(uri, thisPool.pool[uri]);
-            if (prevProps.graph.outcomesHash !== props.graph.outcomesHash) {
-                updated = true;
-            }
-        } else if ( props.traversalPool.running===0 ) {
-            if(prevProps.graph.outcomesHash !== props.graph.outcomesHash) {
-                updated = true;
-            }
-        }
-        return updated;
+	updateMedia(){
+		var mp3, mei;
+		if(this.props.graph.outcomes && this.props.graph.outcomes[0]
+			 && this.props.graph.outcomes[0]['@graph'].length){
+			mei = this.props.graph.outcomes[0]['@graph'][0]['@id'];
+		}
+		if(this.props.graph.outcomes && this.props.graph.outcomes[1]
+			 && this.props.graph.outcomes[1]['@graph'].length){
+			mp3 = this.props.graph.outcomes[1]['@graph'][0]['@id'];
+		}
+		console.log(this.props, this.state, mei, mp3);
+		this.setState({ mp3_uri: mp3, mei_uri: mei });
 	}
 
 	render() {
@@ -107,7 +114,6 @@ class App extends Component {
 		);
 	}
 }
-
 function mapStateToProps({ graph , score, traversalPool}) {
 	return { graph , score, traversalPool };
 }
@@ -120,4 +126,5 @@ function mapDispatchToProps(dispatch) {
 }
 
 export default connect(mapStateToProps, mapDispatchToProps)(App);
+
 
