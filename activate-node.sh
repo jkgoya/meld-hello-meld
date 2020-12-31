@@ -11,6 +11,7 @@ export NVM_DIR="$HOME/.nvm"
 
 nvm --version
 
-nvm use 12.19.0  # Later problems were problematic - need Xcode
+nvm use 14.15.1  # Latest LTS as of 2020-12-15
+#nvm use 12.19.0  # Later problems were problematic - need Xcode
 
 node --version

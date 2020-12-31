@@ -11,6 +11,12 @@
     "build-dev": "babel src --out-dir lib --source-maps inline"
   },
   "dependencies": {
+    "react": "^17.0.1",
+    "react-scripts": "^4.0.1",
+    "typescript": "^4.1.3",
+    "meld-clients-core": "oerc-music/meld-clients-core#dev-meld-2.0"
+  },
+  "old-dependencies": {
     "react": "^16.13.0",
     "react-dom": "^16.13.0",
     "react-redux": "^7.2.0",
@@ -19,7 +25,9 @@
     "meld-clients-core": "oerc-music/meld-clients-core#dev-meld-2.0"
   },
   "devDependencies": {
-    "@babel/cli": "^7.8.4"
+    "@babel/cli": "^7.12.10",
+    "@babel/core": "^7.0.0",
+    "@babel/preset-react": "^7.12.0"
   },
   "browserslist": {
     "production": [

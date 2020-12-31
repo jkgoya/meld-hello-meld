@@ -46,7 +46,7 @@ class App extends Component {
 	componentDidMount(){
 		// See: https://reactjs.org/docs/react-component.html#componentdidmount
 		if(this.props.graphURI){
-			this.props.registerTraversal(this.props.graphURI, {numHops: 0});
+			this.props.registerTraversal(this.props.graphURI, {numHops: 0, noProp: "unused"});
 		}
 	}
 

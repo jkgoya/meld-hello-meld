@@ -1,14 +1,13 @@
-# Hello MELD (2)
+# Hello MELD (3)
 
-This is the second minimal "Hello MELD" app.  It loads and displays an MEI-encoded score using the MELD core react libraries.
-
-The code is based on `hello-meld-1`, which in turn is a stripped-down version of [TROMPA's `selectable-score-demo`](https://github.com/trompamusic/selectable-score-demo).
+This is the third minimal "Hello MELD" app.  It reads a graph file  `Hello_MELD.jsonld` and uses that to get URIs of an MEI-encoded score and MP3 file using the MELD core react libraries.
 
 There is also a dependency on Apple's XCode, and requires to agree licences:
 
     sudo xcodebuild -license
 
 (Why this is sudo, I can't imagine)
+
 
 ## Setup
 
@@ -39,4 +38,25 @@ There is also a dependency on Apple's XCode, and requires to agree licences:
         npm start
 
 6. Browse to http://localhost:8080
+
+
+## Running with local copy of meld-clients-core project files
+
+1. In local copy of meld-clients-core:
+
+        npm install
+        npm run build
+        npm link
+        rm package-lock.js
+        rm -rf node_modules   # or mv node_modules node_modules_save
+
+2. In this project
+
+        # rm package-lock.js
+        # rm -rf node_modules
+        npm install
+        npm link meld-clients-core  # Note: after install?
+        npm start
+
+
 

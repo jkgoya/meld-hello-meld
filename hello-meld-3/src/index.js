@@ -12,14 +12,14 @@ const createStoreWithMiddleware = applyMiddleware(thunk, ReduxPromise)(createSto
 
 const GRAPH_URI = "Hello_MELD.jsonld";
 
-// <div className="wrapscorepane"> is used for some experiments with CSS
+// <div className="wrapscorepane"> is for experimentation with CSS
 
 ReactDOM.render(
   <div>
     <h1>Hello MELD (3)</h1>
     <div className="wrapscorepane">
       <Provider store={createStoreWithMiddleware(reducers)}>
-				<App graphURI={GRAPH_URI} />
+			<App graphURI={GRAPH_URI} />
       </Provider>
     </div>
   </div>

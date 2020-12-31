@@ -1,41 +1,34 @@
 {
   "name": "hello-meld-1",
+  "type": "module",
   "version": "0.0.1",
   "description": "Hello MELD demo app (1)",
+  "author": "Graham Klyne (at least that's who we'll blame)",
+  "license": "BSD-3-Clause",
   "main": "index.js",
   "scripts": {
     "start": "PORT=8080 react-scripts start",
     "build": "babel src --out-dir lib",
     "build-dev": "babel src --out-dir lib --source-maps inline",
-    "test": "mocha tests/test-hello-meld.js"
+    "build-test": "babel src/tests --out-dir lib/tests --source-maps inline",
+    "test": "mocha lib/tests/test-hello-meld.js",
+    "app-test": "mocha lib/App.test.js"
   },
-  "author": "Graham Klyne",
-  "license": "BSD-3-Clause",
   "devDependencies": {
-    "@babel/cli": "^7.6.0",
-    "@babel/core": "^7.6.0",
-    "@babel/preset-react": "^7.0.0",
+    "@babel/cli": "^7.12.10",
+    "@babel/core": "^7.0.0",
+    "@babel/preset-react": "^7.12.10",
+    "@testing-library/react": "^11.2.2",
     "chai": "^4.2.0",
-    "sinon": "^9.2.1"
+    "mocha": "^8.2.1",
+    "mocha-jsdom": "^2.0.0",
+    "react-dom": "^17.0.1",
+    "sinon": "^9.2.2"
   },
   "dependencies": {
-    "@solid/react": "^1.9.0",
-    "browserslist": "^4.11.0",
-    "fibers": "^4.0.2",
-    "node-sass": "^4.13.1",
-    "prop-types": "^15.7.2",
-    "react": "^16.13.0",
-    "react-dom": "^16.13.0",
-    "react-native": "^0.63.3",
-    "react-player": "^1.11.0",
-    "react-redux": "^7.2.0",
-    "react-router-dom": "^4.3.1",
-    "react-scripts": "^3.1.1",
-    "redux": "^4.0.5",
-    "redux-promise": "^0.6.0",
-    "redux-thunk": "^2.3.0",
-    "sass": "^1.26.3",
-    "typescript": "^3.8.3"
+    "react": "^17.0.1",
+    "react-scripts": "^4.0.1",
+    "typescript": "^4.1.3"
   },
   "browserslist": {
     "production": [
