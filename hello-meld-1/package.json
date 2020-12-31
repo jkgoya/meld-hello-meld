@@ -10,7 +10,6 @@
     "start": "PORT=8080 react-scripts start",
     "build": "babel src --out-dir lib",
     "build-dev": "babel src --out-dir lib --source-maps inline",
-    "build-test": "babel src/tests --out-dir lib/tests --source-maps inline",
     "test": "mocha lib/tests/test-hello-meld.js",
     "app-test": "mocha lib/App.test.js"
   },

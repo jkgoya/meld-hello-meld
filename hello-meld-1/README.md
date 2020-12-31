@@ -25,7 +25,9 @@ The code is a stripped-down version of [TROMPA's `selectable-=score-demo`](https
 5. Browse to http://localhost:8080
 
 
-## Setup tests using MochaJS, ChaiJS and SinonJS
+## Run tests using MochaJS, ChaiJS
+
+Note that there are numerous additional packages required for testing.  These are included via the package.json file as `devDependencies`.
 
 1. Activate node (see activate-node.sh in parent directory).
 
@@ -33,19 +35,40 @@ The code is a stripped-down version of [TROMPA's `selectable-=score-demo`](https
 
         npm install -g mocha
 
-3. Install chai and sinon:
+3. Install software and tests
 
-        npm install --save-dev chai
-        npm install --save-dev sinon
+        npm install
 
-    `chai` is assertion library.  `sinon` is "spies, stubs and mocks" library.  `--save-dev` tells npm to record the package as a "development" dependency (as opposed to "production").
+5. Build software, build and run tests
+
+        npm run build
+        npm test
+
+    Test run should look like this:
+
+        $ npm test
+
+        > hello-meld-1@0.0.1 test /Users/graham/workspace/github/oerc-music/meld-hello-meld/hello-meld-1
+        > mocha lib/tests/test-hello-meld.js
+
+          Test hello-meld-1
+            ✓ Check rendering of top-level <App> element
+
+          1 passing (514ms)
 
 
+## Other notes
 
-## Testing notes
+### Initial template-app creation
+
+    npm install -g create-react-app
+    npx create-react-app template-app
+
+The final command creates a directory structure for the app, install required node and react modules, and initial boilerplate for the app.  The boilerplate uses an `<App />` component as a top level wrapper for the rendered application: this makes testing easier using the react testing libraries.
+
+### Testing notes
 
 - https://reactjs.org/docs/testing.html
-
 
 - https://mochajs.org/ - seems popular, flexible, backend and front; works with custom test libraries (via errors?)
 
@@ -56,17 +79,4 @@ The code is a stripped-down version of [TROMPA's `selectable-=score-demo`](https
 - https://www.chaijs.com/ - useful assertion library
 
 - https://sinonjs.org/ - "Standalone test spies, stubs and mocks for JavaScript.  Works with any unit testing framework."
-
-
-## Initial template-app creation
-
-    npm install -g create-react-app
-    npx create-react-app template-app
-
-The final command creates a directory structure for the app, install required node and react modules, and initial boilerplate for the app.  The boilerplate uses an `<App />` component as a top level wrapper for the rendered application: this makes testing easier using the react testing libraries.
-
-
-
-
-
 
