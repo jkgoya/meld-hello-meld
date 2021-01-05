@@ -59,3 +59,18 @@ There is also a dependency on Apple's XCode, and requires to agree licences:
         npm link meld-clients-core  # Note: after install?
         npm start
 
+
+## Use Verovio to generate MEI from Musescore MusicXML
+
+The Verovio web site includes a MusicXML converter:
+
+- https://www.verovio.org/musicxml.html
+
+For options used when loading the resulting MEI, see:
+
+- https://www.verovio.org/command-line.xhtml
+
+These are reflected as entries in vrvOptions in App.js
+
+See discussion at https://meld-music.slack.com/archives/CGD53LR9U/p1606816538268500.  Specifically, to use line breaks as set up by MuseScore, include `breaks: 'line'` in the `vrvOptions` value.
+

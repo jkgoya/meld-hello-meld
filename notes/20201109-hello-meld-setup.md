@@ -4,7 +4,7 @@
 
 These instructions assume use of a clone of the [meld-hello-meld project](https://github.com/oerc-music/meld-hello-meld).
 
-Change to directory with the `hello-meld` appp and package.json; e.g.:
+Change to directory with the `hello-meld` app and package.json; e.g.:
 
     cd meld-hello-meld/hello-meld-1
 
