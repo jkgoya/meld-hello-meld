@@ -6,7 +6,7 @@ import thunk from 'redux-thunk';
 import ReduxPromise from 'redux-promise';
 
 import { reducers } from 'meld-clients-core/lib/reducers';
-import App from './app';
+import App from './App';
 
 const createStoreWithMiddleware = applyMiddleware(thunk, ReduxPromise)(createStore);
 
@@ -18,9 +18,11 @@ ReactDOM.render(
   <div>
     <h1>Hello MELD (3)</h1>
     <div className="wrapscorepane">
-      <Provider store={createStoreWithMiddleware(reducers)}>
-			<App graphURI={GRAPH_URI} />
-      </Provider>
+      <React.StrictMode>
+        <Provider store={createStoreWithMiddleware(reducers)}>
+          <App graphURI={GRAPH_URI} />
+        </Provider>
+      </React.StrictMode>
     </div>
   </div>
   , document.querySelector('.container')

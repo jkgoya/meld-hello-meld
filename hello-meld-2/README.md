@@ -48,8 +48,10 @@ There is also a dependency on Apple's XCode, and requires to agree licences:
         npm install
         npm run build
         npm link
-        rm package-lock.js
+        rm package-lock.json
         rm -rf node_modules   # or mv node_modules node_modules_save
+
+    (Or use script `build-meld-clients-core-lib.sh` in that package.)
 
 2. In hello-meld-2 project
 

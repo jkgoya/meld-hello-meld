@@ -3,8 +3,9 @@
 
 # rm package-lock.js
 # rm -rf node_modules
-npm link meld-clients-core
 npm install
 npm link meld-clients-core
+# npm link ../../meld-clients-core/node_modules/react
+
 # npm start
     

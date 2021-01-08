@@ -25,34 +25,34 @@ const vrvOptions = {
 
 class App extends Component { 
 
-	constructor(props) {
-		super(props);
+    constructor(props) {
+        super(props);
 
-		this.props.setTraversalObjectives([
-			{
-				"@type": pref.meldterm + "MEIManifestation"
-			},
-			{
-				"@type": pref.meldterm + "AudioManifestation"
-			}
-		]);
+        this.props.setTraversalObjectives([
+            {
+                "@type": pref.meldterm + "MEIManifestation"
+            },
+            {
+                "@type": pref.meldterm + "AudioManifestation"
+            }
+        ]);
 
-		this.state = {
-			mp3_uri: null,
-			mei_uri: null
-		};
-	}
+        this.state = {
+            mp3_uri: null,
+            mei_uri: null
+        };
+    }
 
-	componentDidMount(){
-		// See: https://reactjs.org/docs/react-component.html#componentdidmount
-		if(this.props.graphURI){
-			this.props.registerTraversal(this.props.graphURI, {numHops: 0, noProp: "unused"});
-		}
-	}
+    componentDidMount(){
+        // See: https://reactjs.org/docs/react-component.html#componentdidmount
+        if(this.props.graphURI){
+            this.props.registerTraversal(this.props.graphURI, {numHops: 0, noProp: "unused"});
+        }
+    }
 
-	componentDidUpdate(prevProps, prevState){
-		// See: https://reactjs.org/docs/react-component.html#componentdidupdate
-		if(prevProps && "graph" in prevProps) {
+    componentDidUpdate(prevProps, prevState){
+        // See: https://reactjs.org/docs/react-component.html#componentdidupdate
+        if(prevProps && "graph" in prevProps) {
             if ( this.graphComponentDidUpdate(this.props, prevProps, prevState ) ) {
                 var mp3, mei;
                 if(this.props.graph.outcomes && this.props.graph.outcomes[0]
@@ -65,8 +65,8 @@ class App extends Component {
                 }
                 this.setState({ mp3_uri: mp3, mei_uri: mei });
             }
-	    }
-	}
+        }
+    }
 
     graphComponentDidUpdate(props, prevProps, prevState) {
         var prevPool = prevProps.traversalPool;
@@ -90,33 +90,33 @@ class App extends Component {
             }
         }
         return updated;
-	}
+    }
 
-	render() {
-		console.log(this.props, this.state);
-		var loading = !(this.state.mp3_uri || this.state.mei_uri) ?
-			<div>Loading...</div> : false;
-		var Audio = this.state.mp3_uri ?
-			<AudioPlayer uri={ this.state.mp3_uri } /> : false;
-		var MEI = this.state.mei_uri ?
-			<Score uri={ this.state.mei_uri } options={vrvOptions} /> : false;
-		return (
-			<div>
-				{loading} {Audio} {MEI}
-			</div>
-		);
-	}
+    render() {
+        console.log(this.props, this.state);
+        var loading = !(this.state.mp3_uri || this.state.mei_uri) ?
+            <div>Loading...</div> : false;
+        var Audio = this.state.mp3_uri ?
+            <AudioPlayer uri={ this.state.mp3_uri } /> : false;
+        var MEI = this.state.mei_uri ?
+            <Score uri={ this.state.mei_uri } options={vrvOptions} /> : false;
+        return (
+            <div>
+                {loading} {Audio} {MEI}
+            </div>
+        );
+    }
 }
 
 function mapStateToProps({ graph , score, traversalPool}) {
-	return { graph , score, traversalPool };
+    return { graph , score, traversalPool };
 }
 
 function mapDispatchToProps(dispatch) { 
-	return bindActionCreators({ registerTraversal, traverse,
-															setTraversalObjectives,
-															checkTraversalObjectives, fetchGraph },
-														dispatch);
+    return bindActionCreators({ registerTraversal, traverse,
+                                                            setTraversalObjectives,
+                                                            checkTraversalObjectives, fetchGraph },
+                                                        dispatch);
 }
 
 export default connect(mapStateToProps, mapDispatchToProps)(App);
