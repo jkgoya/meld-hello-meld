@@ -1,11 +1,3 @@
-import React  from 'react';
-// import ReactDOM from 'react-dom';
-
-// meld-client-core components
-// import { reducers } from 'meld-clients-core/lib/reducers';
-
-import { connect } from 'react-redux' ;
-
 import Score        from 'meld-clients-core/lib/containers/score';
 import AudioPlayer  from 'meld-clients-core/lib/components/audioPlayer';
 
@@ -13,7 +5,7 @@ const MEI_URI = "Hello_MELD.mei";
 const MP3_URI = "Hello_MELD.mp3";
 
 // Options coped from selectable-score-demo...
-// vrvOptions: If not supplied to <SelectableScore>, will default to predefined options
+// vrvOptions: If not supplied to <Score>, will default to predefined options
 const vrvOptions = {  
   breaks: 'line',
   scale: 45,
@@ -24,30 +16,16 @@ const vrvOptions = {
   unit: 6
 }
 
-class App extends React.Component {
-  render() {
-    const audio = <AudioPlayer uri={ MP3_URI } />;
-    const score = <Score uri = { MEI_URI } options = { vrvOptions } />;
-    return ( <div> {audio} {score} </div> );
-  }
-}
-
-/*
 function App() {
   const audio = <AudioPlayer uri={ MP3_URI } />;
   const score = <Score uri = { MEI_URI } options = { vrvOptions } />;
-  return ( <div> {audio} {score} </div> );
+  const app   = (
+    <div id="meld_app">
+      <h1>Hello MELD (2)</h1>
+          {audio} {score}
+    </div>
+    ) ;
+  return app ;
 }
-*/
 
-
-// Hook up with Redux store, exporting connected App
-const mapStateToProps = (state, ownProps) => ({
-  // This component has no properties
-})
-
-export default connect(mapStateToProps, null)(App);
-
-/*
 export default App ;
-*/
