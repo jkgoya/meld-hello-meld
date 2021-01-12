@@ -12,6 +12,22 @@
     "build-dev": "babel src --out-dir lib --source-maps inline"
   },
   "dependencies": {
+    "axios": "^0.21.1",
+    "immutability-helper": "^3.1.1",
+    "jsonld": "^3.2.0",
+    "jsum": "^0.1.4",
+    "meld-clients-core": "oerc-music/meld-clients-core",
+    "react": "^16.0.0",
+    "react-dom": "^16.0.0",
+    "react-media-player": "^0.7.9",
+    "react-redux": "^7.2.2",
+    "react-scripts": "^4.0.1",
+    "redux": "^4.0.5",
+    "redux-promise": "^0.6.0",
+    "redux-thunk": "^2.3.0",
+    "solid-auth-client": "^2.5.4"
+  },
+  "oldDependencies": {
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-redux": "^7.2.2",
@@ -19,6 +35,7 @@
     "redux": "^4.0.5",
     "redux-promise": "^0.6.0",
     "redux-thunk": "^2.3.0",
+    "solid-auth-client": "^2.5.4",
     "typescript": "^4.1.3"
   },
   "devDependencies": {},
