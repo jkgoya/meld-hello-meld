@@ -15,7 +15,6 @@
     "meld-clients-core": "oerc-music/meld-clients-core",
     "react": "^16.0.0",
     "react-dom": "^16.0.0",
-    "react-media-player": "^0.7.9",
     "react-redux": "^7.2.2",
     "react-scripts": "^4.0.1",
     "redux": "^4.0.5",
@@ -25,6 +24,7 @@
   "old-dependencies": {
     "react": "^16.13.0",
     "react-dom": "^16.13.0",
+    "react-media-player": "^0.7.9",
     "react-redux": "^7.2.0",
     "browserslist": "^4.11.0",
     "fibers": "^4.0.2",
