@@ -7,11 +7,11 @@
   "license": "BSD-3-Clause",
   "main": "index.js",
   "scripts": {
-    "start": "PORT=8080 react-scripts start",
     "build": "babel src --out-dir lib",
     "build-dev": "babel src --out-dir lib --source-maps inline",
-    "test": "mocha lib/tests/test-hello-meld.js",
-    "app-test": "mocha lib/App.test.js"
+    "prepare": "node node_modules/.bin/babel src --out-dir lib",
+    "start": "PORT=8080 react-scripts start",
+    "test": "jest  --env=jsdom"
   },
   "devDependencies": {
     "@babel/cli": "^7.12.10",
@@ -20,12 +20,11 @@
     "@babel/preset-react": "^7.12.10",
     "@testing-library/jest-dom": "^5.11.9",
     "@testing-library/react": "^11.2.3",
-    "babel-jest": "^26.6.3",
-    "react-dom": "^17.0.1",
-    "react-test-renderer": "^17.0.1"
+    "babel-jest": "^26.6.3"
   },
   "dependencies": {
     "react": "^17.0.1",
+    "react-dom": "^17.0.1",
     "react-scripts": "^4.0.1"
   },
   "browserslist": {

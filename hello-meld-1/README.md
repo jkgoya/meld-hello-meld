@@ -59,16 +59,19 @@ Note that there are numerous additional packages required for testing.  These ar
 
 ## Run tests using Jest and react-testing-library
 
-    npm install --save-dev babel-jest @babel/preset-env @babel/preset-react
+    npm test
 
+Or:
+
+    npm install --save-dev babel-jest @babel/preset-env @babel/preset-react
     npm install --save-dev @testing-library/react
     npm install --save-dev @testing-library/jest-dom
 
     npm install -g jest
 
-The last 3 commands should be covered by `npm install`.
+The first 3 commands should be covered by `npm install`.
 
-NOTE: jest oitself is installed bvy react-scripts, and is reportedly very version-sensitive,
+NOTE: jest itself is installed by react-scripts, and is reportedly very version-sensitive,
 
 If tests are Javascript files in a subdirectory `__test__`, they are run using:
 
