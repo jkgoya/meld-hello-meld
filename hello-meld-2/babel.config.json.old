@@ -1,0 +1,10 @@
+{
+  "presets": ["@babel/preset-react", "@babel/preset-env"],
+  "plugins": [],
+
+  "old-presets": [
+    "@babel/preset-react",
+    "@babel/preset-env"
+  ],
+  "old-plugins": [ "@babel/plugin-transform-react-jsx" ]
+}

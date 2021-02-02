@@ -1,3 +1,8 @@
+import React, { Component }  from 'react';
+
+import { connect } from 'react-redux' ;
+import { bindActionCreators } from 'redux';
+
 import Score        from 'meld-clients-core/lib/containers/score';
 import AudioPlayer  from 'meld-clients-core/lib/components/audioPlayer';
 

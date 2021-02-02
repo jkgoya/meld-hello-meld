@@ -62,6 +62,56 @@ There is also a dependency on Apple's XCode, and requires to agree licences:
         npm start
 
 
+## Run tests using Jest and react-testing-library
+
+    npm install --save-dev babel-jest @babel/preset-env @babel/preset-react
+
+    npm install --save-dev @testing-library/react
+    npm install --save-dev @testing-library/jest-dom
+
+    npm install -g jest
+
+The first 3 commands should be covered by `npm install`.
+
+NOTE: jest itself is installed by react-scripts, and is reportedly very version-sensitive,
+
+If tests are Javascript files in a subdirectory `__test__`, they are run using:
+
+    jest
+
+
+## Run tests using MochaJS, ChaiJS
+
+Note that there are numerous additional packages required for testing.  These are included via the package.json file as `devDependencies`.
+
+1. Activate node (see activate-node.sh in parent directory).
+
+2. Install mocha command globally:
+
+        npm install -g mocha
+
+3. Install software and tests
+
+
+5. Build software, build and run tests
+
+        npm run build
+        npm test
+
+    Test run should look like this:
+
+        $ npm test
+
+        > hello-meld-1@0.0.1 test /Users/graham/workspace/github/oerc-music/meld-hello-meld/hello-meld-1
+        > mocha lib/tests/test-hello-meld.js
+
+          Test hello-meld-1
+            ✓ Check rendering of top-level <App> element
+
+          1 passing (514ms)
+
+
+
 ## Use Verovio to generate MEI from Musescore MusicXML
 
 The Verovio web site includes a MusicXML converter:

@@ -24,10 +24,12 @@ import { reducers } from 'meld-clients-core/lib/reducers';
 import App from './App';
 
 ReactDOM.render( 
-  <React.StrictMode>
-    <Provider store={createStoreWithMiddleware(reducers)}>
-      <App />
-    </Provider>
-  </React.StrictMode>
+  <div>
+    <React.StrictMode>
+      <Provider store={createStoreWithMiddleware(reducers)} >
+        <App />
+      </Provider>
+    </React.StrictMode>
+  </div>
   , document.getElementById('root') );
 

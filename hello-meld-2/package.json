@@ -1,6 +1,6 @@
 {
   "name": "hello-meld-2",
-  "type": "module",
+  "no_type": "module",
   "version": "0.0.1",
   "description": "Hello MELD demo app (2)",
   "author": "Graham Klyne",
@@ -8,15 +8,17 @@
   "main": "index.js",
   "scripts": {
     "start": "PORT=8080 react-scripts start",
+    "prepare": "node node_modules/.bin/babel src --out-dir lib",
     "build": "babel src --out-dir lib",
-    "build-dev": "babel src --out-dir lib --source-maps inline"
+    "build-dev": "babel src --out-dir lib --source-maps inline",
+    "test1": "node --experimental-vm-modules node_modules/.bin/jest",
+    "test": "jest  --env=jsdom"
   },
   "dependencies": {
     "axios": "^0.21.1",
     "immutability-helper": "^3.1.1",
     "jsonld": "^3.2.0",
     "jsum": "^0.1.4",
-    "meld-clients-core": "oerc-music/meld-clients-core#unblacking-newdeps",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-redux": "^7.2.2",
@@ -26,19 +28,21 @@
     "redux-thunk": "^2.3.0",
     "solid-auth-client": "^2.5.4"
   },
-  "oldDependencies": {
-    "react": "^17.0.1",
-    "react-dom": "^17.0.1",
-    "react-media-player": "^0.7.9",
-    "react-redux": "^7.2.2",
-    "react-scripts": "^4.0.1",
-    "redux": "^4.0.5",
-    "redux-promise": "^0.6.0",
-    "redux-thunk": "^2.3.0",
-    "solid-auth-client": "^2.5.4",
-    "typescript": "^4.1.3"
+  "notDependencies": {
+    "meld-clients-core": "oerc-music/meld-clients-core#unblacking-newdeps"
   },
-  "devDependencies": {},
+  "peerDeependenmcies": {
+    "react": "^17.0.1"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.12.10",
+    "@babel/core": "^7.0.0",
+    "@babel/preset-env": "^7.12.0",
+    "@babel/preset-react": "^7.12.0",
+    "@testing-library/jest-dom": "^5.11.9",
+    "@testing-library/react": "^11.2.3",
+    "babel-jest": "^26.6.3"
+  },
   "browserslist": {
     "production": [
       ">0.2%",
