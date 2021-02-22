@@ -24,13 +24,23 @@ There is also a dependency on Apple's XCode, and requires to agree licences:
 
 4. Install
 
+Ideally, all the should be needed is this:
+
         npm install
 
-   The following may also be required:
+***But*** we've found there are subtle dependencies, which mean the standard npm dependency evaluation doesn't work.  So there are scripts that *seem* to navigate around the problems (for now).
 
-        cd node_modules/meld-core-clients
-        npm run build
-        cd ../..
+In the local `meld-clients-core` directory, run:
+
+    . build-meld-clients-core-lib.sh clean
+
+(If there is already a clean local install of `meld-clients-core`, this step may be unnecessary.)
+
+Then in the current (`hello-meld-3`) directory run:
+
+    . reinstall-app.sh clean
+
+See the script source files for details of how the applications are installed.
 
 
 5. Run the server:
