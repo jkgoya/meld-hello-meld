@@ -60,3 +60,18 @@ There is also a dependency on Apple's XCode, and requires to agree licences:
 
 
 
+.......
+
+
+git clone git@github.com:trompamusic/clara
+cd clara
+git checkout clara200
+
+cd your/meld-clients-core/copy
+git pull
+git checkout with-lib
+
+do the npm link dance
+
+
+

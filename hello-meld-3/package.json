@@ -10,16 +10,31 @@
     "build": "babel src --out-dir lib",
     "build-dev": "babel src --out-dir lib --source-maps inline"
   },
-  "peerDependencies": {},
   "dependencies": {
-    "meld-clients-core": "oerc-music/meld-clients-core",
+    "axios": "^0.21.1",
+    "immutability-helper": "^3.1.1",
+    "jsonld": "^1.8.0",
+    "jsum": "^0.1.4",
     "react": "^16.0.0",
     "react-dom": "^16.0.0",
     "react-redux": "^7.2.2",
     "react-scripts": "^4.0.1",
     "redux": "^4.0.5",
-    "solid-auth-client": "^2.5.4",
-    "typescript": "^3.7.5"
+    "redux-promise": "^0.6.0",
+    "redux-thunk": "^2.3.0",
+    "solid-auth-client": "^2.5.5"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.12.10",
+    "@babel/core": "^7.0.0",
+    "@babel/preset-env": "^7.12.0",
+    "@babel/preset-react": "^7.12.13"
+  },
+  "peerDependencies": {
+    "meld-clients-core": "oerc-music/meld-clients-core"
+  },
+  "old-peerDependencies": {
+    "meld-clients-core": "oerc-music/meld-clients-core#unblacking-newdeps"
   },
   "old-dependencies": {
     "react": "^16.13.0",
@@ -29,11 +44,6 @@
     "browserslist": "^4.11.0",
     "fibers": "^4.0.2",
     "meld-clients-core": "oerc-music/meld-clients-core#dev-meld-2.0"
-  },
-  "devDependencies": {
-    "@babel/cli": "^7.12.10",
-    "@babel/core": "^7.0.0",
-    "@babel/preset-react": "^7.12.0"
   },
   "browserslist": {
     "production": [
