@@ -1,7 +1,14 @@
 import React, { Component }  from 'react';
 
-import { connect } from 'react-redux' ;
-import { bindActionCreators } from 'redux';
+import { connect } from 'react-redux';
+import { createStore, applyMiddleware, bindActionCreators } from 'redux';
+// import thunk from 'redux-thunk';
+// import ReduxPromise from 'redux-promise';
+
+import { reducers } from 'meld-clients-core/lib/reducers';
+import { registerTraversal, traverse, setTraversalObjectives, checkTraversalObjectives } 
+       from 'meld-clients-core/lib/actions/index';
+import { fetchGraph } from 'meld-clients-core/lib/actions/index';
 
 import Score        from 'meld-clients-core/lib/containers/score';
 import AudioPlayer  from 'meld-clients-core/lib/components/audioPlayer';
@@ -33,4 +40,21 @@ function App() {
   return app ;
 }
 
-export default App ;
+// export default App ;
+
+function mapStateToProps({ graph , score, traversalPool}) {
+    return { graph , score, traversalPool };
+}
+
+function mapDispatchToProps(dispatch) { 
+    return bindActionCreators(
+        { registerTraversal, traverse,
+          setTraversalObjectives, checkTraversalObjectives, 
+          fetchGraph 
+        },
+        dispatch
+        );
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(App);
+

@@ -14,14 +14,14 @@ import ReactDOM from 'react-dom';
 
 import { Provider } from 'react-redux';
 import { createStore, applyMiddleware } from 'redux';
-
 import thunk from 'redux-thunk';
 import ReduxPromise from 'redux-promise';
-const createStoreWithMiddleware = applyMiddleware(thunk, ReduxPromise)(createStore);
 
 import { reducers } from 'meld-clients-core/lib/reducers';
 
 import App from './App';
+
+const createStoreWithMiddleware = applyMiddleware(thunk, ReduxPromise)(createStore);
 
 ReactDOM.render( 
   <div>
