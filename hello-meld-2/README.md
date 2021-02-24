@@ -29,7 +29,7 @@ There is also a dependency on Apple's XCode, and requires to agree licences:
 
    The following may also be required:
 
-        cd node_modules/meld-core-clients
+        cd node_modules/meld-clients-core
         npm run build
         cd ../..
 
