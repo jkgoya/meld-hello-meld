@@ -25,6 +25,7 @@ const MEI_URI = "Hello_MELD.mei"
 
 // vrvOptions: If not supplied to <SelectableScore>, will default to predefined options
 const vrvOptions = {  
+  breaks: 'line',
   scale: 45,
   adjustPageHeight: 1,
   pageHeight: 2500,
