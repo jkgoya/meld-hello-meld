@@ -1,7 +1,9 @@
 # Reinstall current MELD app using local copy of meld-clients-core
 #
 
-MCC_NODE_MODULES="../../meld-clients-core/node_modules"
+MCC_PACKAGE="../../meld-clients-core"
+MCC_NODE_MODULES="${MCC_PACKAGE}/node_modules"
+
 
 if [[ "$1" == "unlink" ]]; then
     echo "Unlink meld-clients-core package..."
@@ -27,7 +29,7 @@ fi
 
 echo "Make sure 'meld-clients-core/node_modules' is available for linking operations ..."
 if [ -d ${MCC_NODE_MODULES} ]; then
-    pass
+    echo "${MCC_NODE_MODULES} found"
 elif [ -d ${MCC_NODE_MODULES}_save ]; then
     mv ${MCC_NODE_MODULES}_save ${MCC_NODE_MODULES}
 else
@@ -35,11 +37,27 @@ else
 	return 1
 fi
 
-echo "npm link meld-clients-core ..."
-npm link meld-clients-core
+# echo "npm link meld-clients-core ..."
+# npm link meld-clients-core
+# echo "npm --no-save install verovio ..."
+# npm  --no-save install verovio
+# echo "mkdir node_modules ..."
+# mkdir node_modules
+
 echo "npm install ..."
 npm install
 
+echo "mv node_modules/meld-clients-core node_modules/meld-clients-core-save ..."
+mv node_modules/meld-clients-core node_modules/meld-clients-core-save
+
+echo "cp -a  ${MCC_PACKAGE} node_modules ..."
+cp -a  ${MCC_PACKAGE} node_modules
+
+echo "rm -rf node_modules/meld-clients-core/node_modules ..."
+rm -rf node_modules/meld-clients-core/node_modules
+
+# echo "mv node_modules/meld-clients-core/node_modules/ node_modules/meld-clients-core/node_modules_save ..."
+# mv node_modules/meld-clients-core/node_modules/ node_modules/meld-clients-core/node_modules_save
 
 # echo "============================"
 # echo "Set meld-clients-core peer dependency links ..."
@@ -65,6 +83,6 @@ npm install
 
 
 # Hide `meld-clients-core/node_modules` for running app (avoid multiple react versions)
-mv ${MCC_NODE_MODULES} ${MCC_NODE_MODULES}_save
+# mv ${MCC_NODE_MODULES} ${MCC_NODE_MODULES}_save
 
 # npm start

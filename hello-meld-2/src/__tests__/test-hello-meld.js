@@ -3,12 +3,15 @@ import ReactDOMServer from 'react-dom/server.js';
 import { render, screen } from '@testing-library/react';
 import '@testing-library/jest-dom/extend-expect'
 
-import App from '../App';
+import ReduxApp from '../ReduxApp';
+
+import verovio from 'verovio' ;
+// var verovio = require( 'verovio' );
 
 describe('Test hello-meld-2', () => {
 
-  test('Check rendering of top-level <App> element', () => {
-    const div_app_elem = ( <div data-testid="div_app_elem"> <App /> </div> ) ;
+  test('Check rendering of top-level <ReduxApp> element', () => {
+    const div_app_elem = ( <div data-testid="div_app_elem"> <ReduxApp /> </div> ) ;
     const header_elem  = ( <h1>Hello MELD (2)</h1> );
     const header_html  = ReactDOMServer.renderToStaticMarkup(header_elem);
     render(div_app_elem);

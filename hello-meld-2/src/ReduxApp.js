@@ -10,7 +10,6 @@
 //
 
 import React  from 'react';
-import ReactDOM from 'react-dom';
 
 import { Provider } from 'react-redux';
 import { createStore, applyMiddleware } from 'redux';
@@ -19,28 +18,17 @@ import ReduxPromise from 'redux-promise';
 
 import { reducers } from 'meld-clients-core/lib/reducers';
 
-import ReduxApp from './ReduxApp';
+import App from './App';
 
 const createStoreWithMiddleware = applyMiddleware(thunk, ReduxPromise)(createStore);
 
-ReactDOM.render( 
-  <div>
-    <React.StrictMode>
-      <ReduxApp />
-    </React.StrictMode>
-  </div>
-  , document.getElementById('root') );
+function ReduxApp() {
+  const reduxapp   = (
+    <Provider store={createStoreWithMiddleware(reducers)} >
+      <App />
+    </Provider>
+    ) ;
+  return reduxapp ;
+}
 
-
-/*
-ReactDOM.render( 
-  <div>
-    <React.StrictMode>
-      <Provider store={createStoreWithMiddleware(reducers)} >
-        <App />
-      </Provider>
-    </React.StrictMode>
-  </div>
-  , document.getElementById('root') );
-*/
-
+export default ReduxApp ;
