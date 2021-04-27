@@ -1,0 +1,19 @@
+{
+  “@context”: “http://www.w3.org/ns/anno.jsonld”,
+  “target”: [
+    {
+      “id”: “hello_MELD.mei”
+    }
+  ],
+  “type”: “Annotation”,
+  "body": [{
+    "id": "Hello_MELD.mp3",
+    "type": "Sound",
+    "format": "audio/mp3"
+  }],
+  “motivation”: “linking”,
+  “created”: “@@@@”,
+  “creator”: “@@@@”,
+  “@id”: “@@@@”
+}
+
