@@ -52,7 +52,6 @@ export default class SelectableScoreApp extends Component {
         <NextPageButton 
           buttonContent = { <span>Next</span> }
           uri = { this.state.uri }
-          
         />
 
         { /* pass anything as buttonContent that you'd like to function as a clickable prev page button */ }

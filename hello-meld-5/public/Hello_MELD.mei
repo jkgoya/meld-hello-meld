@@ -1,0 +1,773 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="4.0.0">
+   <meiHead>
+      <fileDesc>
+         <titleStmt>
+            <title>Hello MELD</title>
+            <respStmt>
+               <persName role="composer">Trad, guitar arrangement Russ Shipton</persName>
+               <persName role="lyricist">GK</persName>
+            </respStmt>
+         </titleStmt>
+         <pubStmt><availability>
+               <distributor>2020 Graham Klyne</distributor>
+            </availability>
+         </pubStmt>
+      </fileDesc>
+      <encodingDesc xml:id="encodingdesc-0000001786527290">
+         <appInfo xml:id="appinfo-0000001899075826">
+            <application xml:id="application-0000001093720216" isodate="2020-11-30T16:47:49" version="3.1.0-dev-4fec935">
+               <name xml:id="name-0000000527010217">Verovio</name>
+               <p xml:id="p-0000000372971061">Transcoded from MusicXML</p>
+            </application>
+         </appInfo>
+      </encodingDesc>
+   </meiHead>
+   <music>
+      <body>
+         <mdiv xml:id="mdiv-0000000278041318">
+            <score xml:id="score-0000001098908440">
+               <scoreDef xml:id="scoredef-0000000411339063">
+                  <pgHead xml:id="pghead-0000000746317280">
+                     <rend xml:id="rend-0000001341109616" halign="center" valign="top">Hello MELD</rend>
+                     <rend xml:id="rend-0000000765851302" halign="left" valign="bottom">GK - to tune of Scarborough Fair, guitar arrangement Russ Shipton</rend>
+                  </pgHead>
+                  <pgFoot xml:id="pgfoot-0000001473771273">
+                     <rend xml:id="rend-0000001703282508" halign="center" valign="bottom">2020 Graham Klyne</rend>
+                  </pgFoot>
+                  <staffGrp xml:id="staffgrp-0000000677783491">
+                     <staffDef xml:id="P1" n="1" lines="5" ppq="2" clef.shape="G" clef.line="2" key.sig="1s" meter.count="3" meter.unit="4">
+                        <label xml:id="label-0000000755892577">Voice</label>
+                        <labelAbbr xml:id="labelAbbr-0000002088207391">Vo.</labelAbbr>
+                        <instrDef xml:id="instrdef-0000001113748345" midi.channel="1" midi.instrnum="52" midi.volume="78.00%" />
+                     </staffDef>
+                     <staffDef xml:id="P2" n="2" lines="5" ppq="2" clef.shape="G" clef.line="2" clef.dis="8" clef.dis.place="below" key.sig="1s" meter.count="3" meter.unit="4">
+                        <label xml:id="label-0000000152254524">Guitar</label>
+                        <labelAbbr xml:id="labelAbbr-0000000951711982">Guit.</labelAbbr>
+                        <instrDef xml:id="instrdef-0000001216403191" midi.channel="0" midi.instrnum="25" midi.volume="59.00%" />
+                     </staffDef>
+                  </staffGrp>
+               </scoreDef>
+               <section xml:id="section-0000000867133554">
+                  <measure xml:id="measure-0000000544404836" n="1">
+                     <staff xml:id="staff-0000000700438844" n="1">
+                        <layer xml:id="layer-0000000519647457" n="1">
+                           <note xml:id="note-0000000005958852" dur.ppq="4" dur="2" oct="3" pname="a" stem.dir="up">
+                              <verse xml:id="verse-0000001295382310" n="1">
+                                 <syl xml:id="syl-0000000068546733" con="s">Are</syl>
+                              </verse>
+                              <verse xml:id="verse-0000000937609384" n="2">
+                                 <syl xml:id="syl-0000000059233414" con="s">Tell</syl>
+                              </verse>
+                           </note>
+                           <note xml:id="note-0000000079727102" dur.ppq="2" dur="4" oct="3" pname="a" stem.dir="up">
+                              <verse xml:id="verse-0000001433714991" n="1">
+                                 <syl xml:id="syl-0000000346117065" con="s">you</syl>
+                              </verse>
+                              <verse xml:id="verse-0000000258994696" n="2">
+                                 <syl xml:id="syl-0000001568688695" con="s">them to</syl>
+                              </verse>
+                           </note>
+                        </layer>
+                     </staff>
+                     <staff xml:id="staff-0000000396835738" n="2">
+                        <layer xml:id="layer-0000001600338015" n="1">
+                           <beam xml:id="beam-0000000320566617">
+                              <note xml:id="note-0000000227631899" dur.ppq="1" dur="8" oct="2" pname="a" stem.dir="up" />
+                              <note xml:id="note-0000000010781502" dur.ppq="1" dur="8" oct="3" pname="a" stem.dir="up" />
+                           </beam>
+                           <beam xml:id="beam-0000001746794338">
+                              <note xml:id="note-0000001402217941" dur.ppq="1" dur="8" oct="4" pname="c" stem.dir="down" />
+                              <note xml:id="note-0000001357554947" dur.ppq="1" dur="8" oct="4" pname="e" stem.dir="down" />
+                           </beam>
+                           <beam xml:id="beam-0000000375364742">
+                              <note xml:id="note-0000001785178962" dur.ppq="1" dur="8" oct="4" pname="c" stem.dir="down" />
+                              <note xml:id="note-0000001471377382" dur.ppq="1" dur="8" oct="3" pname="a" stem.dir="down" />
+                           </beam>
+                        </layer>
+                     </staff>
+                     <harm xml:id="harm-0000002054593558" staff="1" tstamp="1.000000">Am</harm>
+                     <tempo xml:id="tempo-0000000131032632" place="above" staff="1" tstamp="1.000000" mm="125" mm.unit="4">
+                        <rend xml:id="rend-0000001024781003" fontname="VerovioText"></rend> = 125</tempo>
+                  </measure>
+                  <measure xml:id="measure-0000000626886988" n="2">
+                     <staff xml:id="staff-0000001570735262" n="1">
+                        <layer xml:id="layer-0000001940424324" n="1">
+                           <note xml:id="note-0000001852658358" dur.ppq="2" dur="4" oct="4" pname="e" stem.dir="up">
+                              <verse xml:id="verse-0000002055001843" n="1">
+                                 <syl xml:id="syl-0000000217851429" con="s">join-</syl>
+                              </verse>
+                              <verse xml:id="verse-0000002069951432" n="2">
+                                 <syl xml:id="syl-0000001809893992" con="s">make</syl>
+                              </verse>
+                           </note>
+                           <note xml:id="note-0000002078959047" dur.ppq="2" dur="4" oct="4" pname="e" stem.dir="up">
+                              <verse xml:id="verse-0000000136625893" n="1">
+                                 <syl xml:id="syl-0000001800042434" con="s">ing</syl>
+                              </verse>
+                              <verse xml:id="verse-0000000692339106" n="2">
+                                 <syl xml:id="syl-0000000573670291" con="s">me</syl>
+                              </verse>
+                           </note>
+                           <note xml:id="note-0000000089706847" dur.ppq="2" dur="4" oct="4" pname="e" stem.dir="up">
+                              <verse xml:id="verse-0000001080577982" n="1">
+                                 <syl xml:id="syl-0000001974491281" con="s">a</syl>
+                              </verse>
+                              <verse xml:id="verse-0000000539941533" n="2">
+                                 <syl xml:id="syl-0000001667987065" con="s">a</syl>
+                              </verse>
+                           </note>
+                        </layer>
+                     </staff>
+                     <staff xml:id="staff-0000000897070143" n="2">
+                        <layer xml:id="layer-0000000338250137" n="1">
+                           <beam xml:id="beam-0000000795656877">
+                              <note xml:id="note-0000001669649805" dur.ppq="1" dur="8" oct="3" pname="c" stem.dir="up" />
+                              <note xml:id="note-0000001331002438" dur.ppq="1" dur="8" oct="3" pname="g" stem.dir="up" />
+                           </beam>
+                           <beam xml:id="beam-0000001830625791">
+                              <note xml:id="note-0000000811812767" dur.ppq="1" dur="8" oct="4" pname="c" stem.dir="down" />
+                              <note xml:id="note-0000002037026512" dur.ppq="1" dur="8" oct="4" pname="e" stem.dir="down" />
+                           </beam>
+                           <beam xml:id="beam-0000001353212911">
+                              <note xml:id="note-0000000587451003" dur.ppq="1" dur="8" oct="4" pname="c" stem.dir="up" />
+                              <note xml:id="note-0000000853795030" dur.ppq="1" dur="8" oct="3" pname="g" stem.dir="up" />
+                           </beam>
+                        </layer>
+                     </staff>
+                     <harm xml:id="harm-0000000387961713" staff="1" tstamp="1.000000">C</harm>
+                  </measure>
+                  <measure xml:id="measure-0000001192709418" n="3">
+                     <staff xml:id="staff-0000000917611347" n="1">
+                        <layer xml:id="layer-0000001554685116" n="1">
+                           <note xml:id="note-0000000895873495" dur.ppq="2" dur="4" oct="3" pname="b" stem.dir="up">
+                              <verse xml:id="verse-0000001459725529" n="1">
+                                 <syl xml:id="syl-0000002129494405" con="u">MELD</syl>
+                              </verse>
+                              <verse xml:id="verse-0000001998089729" n="2">
+                                 <syl xml:id="syl-0000000195158511" con="u">So</syl>
+                              </verse>
+                           </note>
+                           <note xml:id="note-0000001337742517" dur.ppq="2" dur="4" oct="4" pname="c" stem.dir="up" />
+                           <note xml:id="note-0000000259294081" dur.ppq="2" dur="4" oct="3" pname="b" stem.dir="up">
+                              <verse xml:id="verse-0000000978064285" n="2">
+                                 <syl xml:id="syl-0000000055364915" con="s">lid</syl>
+                              </verse>
+                           </note>
+                        </layer>
+                     </staff>
+                     <staff xml:id="staff-0000001424498828" n="2">
+                        <layer xml:id="layer-0000000804445705" n="1">
+                           <beam xml:id="beam-0000001992345695">
+                              <note xml:id="note-0000000776475406" dur.ppq="1" dur="8" oct="2" pname="g" stem.dir="up" />
+                              <note xml:id="note-0000001270877660" dur.ppq="1" dur="8" oct="3" pname="g" stem.dir="up" />
+                           </beam>
+                           <beam xml:id="beam-0000000580380213">
+                              <note xml:id="note-0000000904084088" dur.ppq="1" dur="8" oct="3" pname="b" stem.dir="down" />
+                              <note xml:id="note-0000000581878340" dur.ppq="1" dur="8" oct="4" pname="g" stem.dir="down" />
+                           </beam>
+                           <beam xml:id="beam-0000001606993307">
+                              <note xml:id="note-0000000657294262" dur.ppq="1" dur="8" oct="3" pname="b" stem.dir="up" />
+                              <note xml:id="note-0000001224911889" dur.ppq="1" dur="8" oct="3" pname="g" stem.dir="up" />
+                           </beam>
+                        </layer>
+                     </staff>
+                     <harm xml:id="harm-0000002047916227" staff="1" tstamp="1.000000">G</harm>
+                  </measure>
+                  <measure xml:id="measure-0000001058313045" n="4">
+                     <staff xml:id="staff-0000000946916058" n="1">
+                        <layer xml:id="layer-0000001909574567" n="1">
+                           <note xml:id="note-0000001891516092" dots="1" dur.ppq="6" dur="2" oct="3" pname="a" stem.dir="up">
+                              <verse xml:id="verse-0000001666354196" n="1">
+                                 <syl xml:id="syl-0000002054669117" con="s">session</syl>
+                              </verse>
+                              <verse xml:id="verse-0000000245810096" n="2">
+                                 <syl xml:id="syl-0000000792144790" con="s">pod</syl>
+                              </verse>
+                           </note>
+                        </layer>
+                     </staff>
+                     <staff xml:id="staff-0000002077889152" n="2">
+                        <layer xml:id="layer-0000001357283939" n="1">
+                           <beam xml:id="beam-0000000835717998">
+                              <note xml:id="note-0000001566250657" dur.ppq="1" dur="8" oct="2" pname="a" stem.dir="up" />
+                              <note xml:id="note-0000000232405604" dur.ppq="1" dur="8" oct="3" pname="a" stem.dir="up" />
+                           </beam>
+                           <beam xml:id="beam-0000000255854567">
+                              <note xml:id="note-0000000728471197" dur.ppq="1" dur="8" oct="4" pname="c" stem.dir="down" />
+                              <note xml:id="note-0000000962365520" dur.ppq="1" dur="8" oct="4" pname="e" stem.dir="down" />
+                           </beam>
+                           <beam xml:id="beam-0000000022896973">
+                              <note xml:id="note-0000000853606775" dur.ppq="1" dur="8" oct="4" pname="c" stem.dir="down" />
+                              <note xml:id="note-0000000086636138" dur.ppq="1" dur="8" oct="3" pname="a" stem.dir="down" />
+                           </beam>
+                        </layer>
+                     </staff>
+                     <harm xml:id="harm-0000001217673378" staff="1" tstamp="1.000000">Am</harm>
+                  </measure>
+                  <sb xml:id="sb-0000000581692484" />
+                  <measure xml:id="measure-0000001808535298" n="5">
+                     <staff xml:id="staff-0000001183884858" n="1">
+                        <layer xml:id="layer-0000001487516177" n="1">
+                           <note xml:id="note-0000002097525320" dur.ppq="4" dur="2" oct="4" pname="e" stem.dir="up">
+                              <verse xml:id="verse-0000000592575855" n="1">
+                                 <syl xml:id="syl-0000000642815464" con="s">Crotch-</syl>
+                              </verse>
+                              <verse xml:id="verse-0000000151704135" n="2">
+                                 <syl xml:id="syl-0000000521980425" con="s">Crotch-</syl>
+                              </verse>
+                           </note>
+                           <note xml:id="note-0000000640426802" dur.ppq="2" dur="4" oct="4" pname="g" stem.dir="up">
+                              <verse xml:id="verse-0000002059652728" n="1">
+                                 <syl xml:id="syl-0000001689692365" con="s">et</syl>
+                              </verse>
+                              <verse xml:id="verse-0000000579109602" n="2">
+                                 <syl xml:id="syl-0000000594332070" con="s">et</syl>
+                              </verse>
+                           </note>
+                        </layer>
+                     </staff>
+                     <staff xml:id="staff-0000000356580565" n="2">
+                        <layer xml:id="layer-0000001279167027" n="1">
+                           <beam xml:id="beam-0000001020735628">
+                              <note xml:id="note-0000000862892143" dur.ppq="1" dur="8" oct="3" pname="e" stem.dir="up" />
+                              <note xml:id="note-0000001864207198" dur.ppq="1" dur="8" oct="3" pname="a" stem.dir="up" />
+                           </beam>
+                           <beam xml:id="beam-0000000393928315">
+                              <note xml:id="note-0000001219033719" dur.ppq="1" dur="8" oct="4" pname="c" stem.dir="down" />
+                              <note xml:id="note-0000000382086191" dur.ppq="1" dur="8" oct="4" pname="e" stem.dir="down" />
+                           </beam>
+                           <beam xml:id="beam-0000000862812178">
+                              <note xml:id="note-0000001199826159" dur.ppq="1" dur="8" oct="4" pname="c" stem.dir="down" />
+                              <note xml:id="note-0000000080954912" dur.ppq="1" dur="8" oct="3" pname="a" stem.dir="down" />
+                           </beam>
+                        </layer>
+                     </staff>
+                     <harm xml:id="harm-0000001792297390" staff="1" tstamp="1.000000">Am</harm>
+                  </measure>
+                  <measure xml:id="measure-0000000835520041" n="6">
+                     <staff xml:id="staff-0000000316628266" n="1">
+                        <layer xml:id="layer-0000001880154550" n="1">
+                           <note xml:id="note-0000001927334759" dur.ppq="4" dur="2" oct="4" pname="a" stem.dir="up">
+                              <verse xml:id="verse-0000001736067455" n="1">
+                                 <syl xml:id="syl-0000000160099542" con="s">quav-</syl>
+                              </verse>
+                              <verse xml:id="verse-0000000772248797" n="2">
+                                 <syl xml:id="syl-0000001577313382" con="s">quav-</syl>
+                              </verse>
+                           </note>
+                           <note xml:id="note-0000001687098264" dur.ppq="2" dur="4" oct="4" pname="g" stem.dir="up">
+                              <verse xml:id="verse-0000000814760292" n="1">
+                                 <syl xml:id="syl-0000000902293601" con="s">er</syl>
+                              </verse>
+                              <verse xml:id="verse-0000000665844557" n="2">
+                                 <syl xml:id="syl-0000000842242976" con="s">er</syl>
+                              </verse>
+                           </note>
+                        </layer>
+                     </staff>
+                     <staff xml:id="staff-0000001748378701" n="2">
+                        <layer xml:id="layer-0000000579164783" n="1">
+                           <beam xml:id="beam-0000000428893072">
+                              <note xml:id="note-0000001844358797" dur.ppq="1" dur="8" oct="2" pname="a" stem.dir="up" />
+                              <note xml:id="note-0000000762852150" dur.ppq="1" dur="8" oct="3" pname="a" stem.dir="up" />
+                           </beam>
+                           <beam xml:id="beam-0000001980665355">
+                              <note xml:id="note-0000001559440937" dur.ppq="1" dur="8" oct="4" pname="c" stem.dir="down" />
+                              <note xml:id="note-0000001971685807" dur.ppq="1" dur="8" oct="4" pname="e" stem.dir="down" />
+                           </beam>
+                           <beam xml:id="beam-0000000409434084">
+                              <note xml:id="note-0000000603661281" dur.ppq="1" dur="8" oct="4" pname="c" stem.dir="down" />
+                              <note xml:id="note-0000001730297185" dur.ppq="1" dur="8" oct="3" pname="a" stem.dir="down" />
+                           </beam>
+                        </layer>
+                     </staff>
+                     <harm xml:id="harm-0000002111000330" staff="1" tstamp="1.000000">Am</harm>
+                  </measure>
+                  <measure xml:id="measure-0000000469943185" n="7">
+                     <staff xml:id="staff-0000000895732553" n="1">
+                        <layer xml:id="layer-0000000020110553" n="1">
+                           <note xml:id="note-0000001056594432" dur.ppq="2" dur="4" oct="4" pname="e" stem.dir="up">
+                              <verse xml:id="verse-0000000496241749" n="1">
+                                 <syl xml:id="syl-0000000950449466" con="s">meas-</syl>
+                              </verse>
+                              <verse xml:id="verse-0000001798957180" n="2">
+                                 <syl xml:id="syl-0000000234461389" con="s">meas-</syl>
+                              </verse>
+                           </note>
+                           <note xml:id="note-0000000086089314" dur.ppq="2" dur="4" oct="4" pname="f" stem.dir="up" accid.ges="s">
+                              <verse xml:id="verse-0000001876572052" n="1">
+                                 <syl xml:id="syl-0000000043014758" con="s">ure</syl>
+                              </verse>
+                              <verse xml:id="verse-0000000199260678" n="2">
+                                 <syl xml:id="syl-0000001598832388" con="s">ure</syl>
+                              </verse>
+                           </note>
+                           <note xml:id="note-0000000661720176" dur.ppq="2" dur="4" oct="4" pname="d" stem.dir="up">
+                              <verse xml:id="verse-0000001942776400" n="1">
+                                 <syl xml:id="syl-0000000595114109" con="s">and</syl>
+                              </verse>
+                              <verse xml:id="verse-0000001483604344" n="2">
+                                 <syl xml:id="syl-0000001531179732" con="s">and</syl>
+                              </verse>
+                           </note>
+                        </layer>
+                     </staff>
+                     <staff xml:id="staff-0000000293750848" n="2">
+                        <layer xml:id="layer-0000000099796201" n="1">
+                           <beam xml:id="beam-0000001000775643">
+                              <note xml:id="note-0000001509681387" dur.ppq="1" dur="8" oct="3" pname="d" stem.dir="up" />
+                              <note xml:id="note-0000001104595142" dur.ppq="1" dur="8" oct="3" pname="a" stem.dir="up" />
+                           </beam>
+                           <beam xml:id="beam-0000001720026148">
+                              <note xml:id="note-0000000791335076" dur.ppq="1" dur="8" oct="4" pname="d" stem.dir="down" />
+                              <note xml:id="note-0000001953851759" dur.ppq="1" dur="8" oct="4" pname="f" stem.dir="down" accid.ges="s" />
+                           </beam>
+                           <beam xml:id="beam-0000001489456380">
+                              <note xml:id="note-0000000888505932" dur.ppq="1" dur="8" oct="4" pname="d" stem.dir="down" />
+                              <note xml:id="note-0000001140913337" dur.ppq="1" dur="8" oct="3" pname="a" stem.dir="down" />
+                           </beam>
+                        </layer>
+                     </staff>
+                     <harm xml:id="harm-0000001022683629" staff="1" tstamp="1.000000">D</harm>
+                  </measure>
+                  <measure xml:id="measure-0000000028651021" n="8">
+                     <staff xml:id="staff-0000001571897202" n="1">
+                        <layer xml:id="layer-0000002118896991" n="1">
+                           <note xml:id="note-0000000922501680" dots="1" dur.ppq="6" dur="2" oct="4" pname="e" stem.dir="up">
+                              <verse xml:id="verse-0000001677196586" n="1">
+                                 <syl xml:id="syl-0000001114112919" con="s">time</syl>
+                              </verse>
+                              <verse xml:id="verse-0000000869630662" n="2">
+                                 <syl xml:id="syl-0000001194626939" con="s">time</syl>
+                              </verse>
+                           </note>
+                        </layer>
+                     </staff>
+                     <staff xml:id="staff-0000000693365890" n="2">
+                        <layer xml:id="layer-0000000264363457" n="1">
+                           <beam xml:id="beam-0000000993149840">
+                              <note xml:id="note-0000001711386465" dur.ppq="1" dur="8" oct="2" pname="a" stem.dir="up" />
+                              <note xml:id="note-0000000161972416" dur.ppq="1" dur="8" oct="3" pname="a" stem.dir="up" />
+                           </beam>
+                           <beam xml:id="beam-0000002038812895">
+                              <note xml:id="note-0000001686060798" dur.ppq="1" dur="8" oct="4" pname="c" stem.dir="down" />
+                              <note xml:id="note-0000000414972328" dur.ppq="1" dur="8" oct="4" pname="e" stem.dir="down" />
+                           </beam>
+                           <beam xml:id="beam-0000000801405111">
+                              <note xml:id="note-0000000696632777" dur.ppq="1" dur="8" oct="4" pname="c" stem.dir="down" />
+                              <note xml:id="note-0000001180848915" dur.ppq="1" dur="8" oct="3" pname="a" stem.dir="down" />
+                           </beam>
+                        </layer>
+                     </staff>
+                     <harm xml:id="harm-0000000429123922" staff="1" tstamp="1.000000">Am</harm>
+                  </measure>
+                  <sb xml:id="sb-0000000397295725" />
+                  <measure xml:id="measure-0000001910260363" n="9">
+                     <staff xml:id="staff-0000000459401891" n="1">
+                        <layer xml:id="layer-0000001445099102" n="1">
+                           <mRest xml:id="mrest-0000000178638644" />
+                        </layer>
+                     </staff>
+                     <staff xml:id="staff-0000001483589512" n="2">
+                        <layer xml:id="layer-0000002059004173" n="1">
+                           <beam xml:id="beam-0000001863436049">
+                              <note xml:id="note-0000000220381237" dur.ppq="1" dur="8" oct="3" pname="e" stem.dir="up" />
+                              <note xml:id="note-0000001337275096" dur.ppq="1" dur="8" oct="3" pname="a" stem.dir="up" />
+                           </beam>
+                           <beam xml:id="beam-0000000050943582">
+                              <note xml:id="note-0000001711710587" dur.ppq="1" dur="8" oct="4" pname="c" stem.dir="down" />
+                              <note xml:id="note-0000001033769521" dur.ppq="1" dur="8" oct="4" pname="e" stem.dir="down" />
+                           </beam>
+                           <beam xml:id="beam-0000001214526422">
+                              <note xml:id="note-0000000744355698" dur.ppq="1" dur="8" oct="4" pname="c" stem.dir="down" />
+                              <note xml:id="note-0000000333805651" dur.ppq="1" dur="8" oct="3" pname="a" stem.dir="down" />
+                           </beam>
+                        </layer>
+                     </staff>
+                     <harm xml:id="harm-0000001686188585" staff="1" tstamp="1.000000">Am</harm>
+                  </measure>
+                  <measure xml:id="measure-0000000638893080" n="10">
+                     <staff xml:id="staff-0000001676191913" n="1">
+                        <layer xml:id="layer-0000001282631104" n="1">
+                           <note xml:id="note-0000000166776692" dur.ppq="2" dur="4" oct="4" pname="a" stem.dir="up">
+                              <verse xml:id="verse-0000001867759600" n="1">
+                                 <syl xml:id="syl-0000000457996177" con="s">Re-</syl>
+                              </verse>
+                              <verse xml:id="verse-0000001539597757" n="2">
+                                 <syl xml:id="syl-0000000830007767" con="s">Mu-</syl>
+                              </verse>
+                           </note>
+                           <note xml:id="note-0000000996798093" dur.ppq="2" dur="4" oct="4" pname="a" stem.dir="up">
+                              <verse xml:id="verse-0000001895082295" n="1">
+                                 <syl xml:id="syl-0000000087621632" con="s">mem-</syl>
+                              </verse>
+                              <verse xml:id="verse-0000000959321893" n="2">
+                                 <syl xml:id="syl-0000000228914674" con="s">sic</syl>
+                              </verse>
+                           </note>
+                           <note xml:id="note-0000001097710386" dur.ppq="2" dur="4" oct="4" pname="a" stem.dir="up">
+                              <verse xml:id="verse-0000001057830137" n="1">
+                                 <syl xml:id="syl-0000001693832351" con="s">ber</syl>
+                              </verse>
+                              <verse xml:id="verse-0000001041194873" n="2">
+                                 <syl xml:id="syl-0000001090006577" con="s">en-</syl>
+                              </verse>
+                           </note>
+                        </layer>
+                     </staff>
+                     <staff xml:id="staff-0000001094065900" n="2">
+                        <layer xml:id="layer-0000000181815797" n="1">
+                           <beam xml:id="beam-0000001184764056">
+                              <note xml:id="note-0000001808951263" dur.ppq="1" dur="8" oct="2" pname="a" stem.dir="up" />
+                              <note xml:id="note-0000001708653382" dur.ppq="1" dur="8" oct="3" pname="a" stem.dir="up" />
+                           </beam>
+                           <beam xml:id="beam-0000000444164418">
+                              <note xml:id="note-0000002025028845" dur.ppq="1" dur="8" oct="4" pname="c" stem.dir="down" />
+                              <note xml:id="note-0000001231274775" dur.ppq="1" dur="8" oct="4" pname="e" stem.dir="down" />
+                           </beam>
+                           <beam xml:id="beam-0000001438217142">
+                              <note xml:id="note-0000000821463958" dur.ppq="1" dur="8" oct="4" pname="c" stem.dir="down" />
+                              <note xml:id="note-0000001105640747" dur.ppq="1" dur="8" oct="3" pname="a" stem.dir="down" />
+                           </beam>
+                        </layer>
+                     </staff>
+                     <harm xml:id="harm-0000000792403365" staff="1" tstamp="1.000000">Am</harm>
+                  </measure>
+                  <measure xml:id="measure-0000001592785925" n="11">
+                     <staff xml:id="staff-0000000242167905" n="1">
+                        <layer xml:id="layer-0000000512901900" n="1">
+                           <note xml:id="note-0000000644273395" dur.ppq="4" dur="2" oct="4" pname="g" stem.dir="up">
+                              <verse xml:id="verse-0000002072403309" n="1">
+                                 <syl xml:id="syl-0000001331421989" con="s">me</syl>
+                              </verse>
+                              <verse xml:id="verse-0000001312151326" n="2">
+                                 <syl xml:id="syl-0000000282192524" con="s">co-</syl>
+                              </verse>
+                           </note>
+                           <note xml:id="note-0000001580695510" dur.ppq="2" dur="4" oct="4" pname="e" stem.dir="up">
+                              <verse xml:id="verse-0000001917696848" n="1">
+                                 <syl xml:id="syl-0000000903278702" con="s">with a</syl>
+                              </verse>
+                              <verse xml:id="verse-0000001576374200" n="2">
+                                 <syl xml:id="syl-0000002128899798" con="s">ding</syl>
+                              </verse>
+                           </note>
+                        </layer>
+                     </staff>
+                     <staff xml:id="staff-0000000115986034" n="2">
+                        <layer xml:id="layer-0000000691213612" n="1">
+                           <beam xml:id="beam-0000000749811663">
+                              <note xml:id="note-0000001955148045" dur.ppq="1" dur="8" oct="2" pname="e" stem.dir="up" />
+                              <note xml:id="note-0000001955788604" dur.ppq="1" dur="8" oct="3" pname="g" stem.dir="up" />
+                           </beam>
+                           <beam xml:id="beam-0000000851825328">
+                              <note xml:id="note-0000001705500000" dur.ppq="1" dur="8" oct="3" pname="b" stem.dir="down" />
+                              <note xml:id="note-0000000378431218" dur.ppq="1" dur="8" oct="4" pname="e" stem.dir="down" />
+                           </beam>
+                           <beam xml:id="beam-0000001823997736">
+                              <note xml:id="note-0000001769299474" dur.ppq="1" dur="8" oct="3" pname="b" stem.dir="up" />
+                              <note xml:id="note-0000002009493309" dur.ppq="1" dur="8" oct="3" pname="g" stem.dir="up" />
+                           </beam>
+                        </layer>
+                     </staff>
+                     <harm xml:id="harm-0000002084023516" staff="1" tstamp="1.000000">Em</harm>
+                  </measure>
+                  <measure xml:id="measure-0000000768111214" n="12">
+                     <staff xml:id="staff-0000000217912123" n="1">
+                        <layer xml:id="layer-0000000284899930" n="1">
+                           <note xml:id="note-0000001862825282" dur.ppq="2" dur="4" oct="4" pname="e" stem.dir="up">
+                              <verse xml:id="verse-0000002131976534" n="1">
+                                 <syl xml:id="syl-0000000276165221" con="s">web</syl>
+                              </verse>
+                              <verse xml:id="verse-0000000830081992" n="2">
+                                 <syl xml:id="syl-0000000394403348" con="s">join-</syl>
+                              </verse>
+                           </note>
+                           <note xml:id="note-0000001733799758" dur.ppq="2" dur="4" oct="4" pname="d" stem.dir="up">
+                              <verse xml:id="verse-0000001527974015" n="1">
+                                 <syl xml:id="syl-0000000597088221" con="s">an-</syl>
+                              </verse>
+                              <verse xml:id="verse-0000000510980314" n="2">
+                                 <syl xml:id="syl-0000001824950988" con="s">ed</syl>
+                              </verse>
+                           </note>
+                           <note xml:id="note-0000000947115608" dur.ppq="2" dur="4" oct="4" pname="c" stem.dir="up">
+                              <verse xml:id="verse-0000000907366068" n="2">
+                                 <syl xml:id="syl-0000000151117271" con="s">by</syl>
+                              </verse>
+                              <verse xml:id="verse-0000000197693064" n="1">
+                                 <syl xml:id="syl-0000000086488700" con="s">no-</syl>
+                              </verse>
+                           </note>
+                        </layer>
+                     </staff>
+                     <staff xml:id="staff-0000001396316713" n="2">
+                        <layer xml:id="layer-0000000876990437" n="1">
+                           <beam xml:id="beam-0000000829151133">
+                              <note xml:id="note-0000000500000030" dur.ppq="1" dur="8" oct="2" pname="a" stem.dir="up" />
+                              <note xml:id="note-0000001312438597" dur.ppq="1" dur="8" oct="3" pname="a" stem.dir="up" />
+                           </beam>
+                           <beam xml:id="beam-0000000779495227">
+                              <note xml:id="note-0000000802152754" dur.ppq="1" dur="8" oct="4" pname="c" stem.dir="down" />
+                              <note xml:id="note-0000000264180374" dur.ppq="1" dur="8" oct="4" pname="e" stem.dir="down" />
+                           </beam>
+                           <beam xml:id="beam-0000001020355528">
+                              <note xml:id="note-0000000808027169" dur.ppq="1" dur="8" oct="4" pname="c" stem.dir="down" />
+                              <note xml:id="note-0000001293484322" dur.ppq="1" dur="8" oct="3" pname="a" stem.dir="down" />
+                           </beam>
+                        </layer>
+                     </staff>
+                     <harm xml:id="harm-0000001186398312" staff="1" tstamp="1.000000">Am</harm>
+                  </measure>
+                  <sb xml:id="sb-0000001721487425" />
+                  <measure xml:id="measure-0000001492812215" n="13">
+                     <staff xml:id="staff-0000001416435148" n="1">
+                        <layer xml:id="layer-0000001795308932" n="1">
+                           <note xml:id="note-0000001108036019" dur.ppq="2" dur="4" oct="3" pname="b" stem.dir="up">
+                              <verse xml:id="verse-0000000271039762" n="2">
+                                 <syl xml:id="syl-0000000670736848" con="u">LOD</syl>
+                              </verse>
+                              <verse xml:id="verse-0000000463902401" n="1">
+                                 <syl xml:id="syl-0000000452892021" con="u">ta</syl>
+                              </verse>
+                           </note>
+                           <note xml:id="note-0000001345066954" dur.ppq="2" dur="4" oct="3" pname="a" stem.dir="up" />
+                           <note xml:id="note-0000000986732591" dur.ppq="2" dur="4" oct="3" pname="g" stem.dir="up">
+                              <verse xml:id="verse-0000000002083051" n="1">
+                                 <syl xml:id="syl-0000000076613546" con="s">tion</syl>
+                              </verse>
+                           </note>
+                        </layer>
+                     </staff>
+                     <staff xml:id="staff-0000000951563322" n="2">
+                        <layer xml:id="layer-0000001900816095" n="1">
+                           <beam xml:id="beam-0000000380684677">
+                              <note xml:id="note-0000000967204184" dur.ppq="1" dur="8" oct="2" pname="g" stem.dir="up" />
+                              <note xml:id="note-0000001153607597" dur.ppq="1" dur="8" oct="3" pname="g" stem.dir="up" />
+                           </beam>
+                           <beam xml:id="beam-0000000535367972">
+                              <note xml:id="note-0000001843588729" dur.ppq="1" dur="8" oct="3" pname="b" stem.dir="down" />
+                              <note xml:id="note-0000000418207824" dur.ppq="1" dur="8" oct="4" pname="g" stem.dir="down" />
+                           </beam>
+                           <beam xml:id="beam-0000000920094604">
+                              <note xml:id="note-0000000887048493" dur.ppq="1" dur="8" oct="3" pname="b" stem.dir="up" />
+                              <note xml:id="note-0000001147887614" dur.ppq="1" dur="8" oct="3" pname="g" stem.dir="up" />
+                           </beam>
+                        </layer>
+                     </staff>
+                     <harm xml:id="harm-0000001590149446" staff="1" tstamp="1.000000">G</harm>
+                     <slur xml:id="slur-0000000735028189" startid="#note-0000001108036019" endid="#note-0000000986732591" curvedir="below" />
+                     <tie xml:id="tie-0000001576101572" startid="#note-0000000986732591" endid="#note-0000002095304507" />
+                  </measure>
+                  <measure xml:id="measure-0000001774397645" n="14">
+                     <staff xml:id="staff-0000000862698503" n="1">
+                        <layer xml:id="layer-0000002119675394" n="1">
+                           <note xml:id="note-0000002095304507" dur.ppq="2" dur="4" oct="3" pname="g" stem.dir="up" />
+                           <rest xml:id="rest-0000002098285389" dur.ppq="2" dur="4" />
+                           <rest xml:id="rest-0000000086304385" dur.ppq="2" dur="4" />
+                        </layer>
+                     </staff>
+                     <staff xml:id="staff-0000001095366301" n="2">
+                        <layer xml:id="layer-0000000269309517" n="1">
+                           <beam xml:id="beam-0000000763694213">
+                              <note xml:id="note-0000000480387252" dur.ppq="1" dur="8" oct="3" pname="d" stem.dir="up" />
+                              <note xml:id="note-0000000510370004" dur.ppq="1" dur="8" oct="3" pname="g" stem.dir="up" />
+                           </beam>
+                           <beam xml:id="beam-0000000266436697">
+                              <note xml:id="note-0000001641660448" dur.ppq="1" dur="8" oct="3" pname="b" stem.dir="down" />
+                              <note xml:id="note-0000001993078859" dur.ppq="1" dur="8" oct="4" pname="g" stem.dir="down" />
+                           </beam>
+                           <beam xml:id="beam-0000001806155514">
+                              <note xml:id="note-0000001129156141" dur.ppq="1" dur="8" oct="3" pname="b" stem.dir="up" />
+                              <note xml:id="note-0000001566337992" dur.ppq="1" dur="8" oct="3" pname="g" stem.dir="up" />
+                           </beam>
+                        </layer>
+                     </staff>
+                     <harm xml:id="harm-0000000418188563" staff="1" tstamp="1.000000">G</harm>
+                  </measure>
+                  <measure xml:id="measure-0000001971500845" n="15">
+                     <staff xml:id="staff-0000000863613566" n="1">
+                        <layer xml:id="layer-0000001217275771" n="1">
+                           <note xml:id="note-0000000829664134" dur.ppq="4" dur="2" oct="3" pname="a" stem.dir="up">
+                              <verse xml:id="verse-0000000436493684" n="1">
+                                 <syl xml:id="syl-0000001383921158" con="s">He-</syl>
+                              </verse>
+                              <verse xml:id="verse-0000000137793567" n="2">
+                                 <syl xml:id="syl-0000001448817403" con="s">Pub-</syl>
+                              </verse>
+                           </note>
+                           <note xml:id="note-0000001355573464" dur.ppq="2" dur="4" oct="4" pname="e" stem.dir="up">
+                              <verse xml:id="verse-0000001011191516" n="2">
+                                 <syl xml:id="syl-0000001639430267" con="s">lish</syl>
+                              </verse>
+                              <verse xml:id="verse-0000000583427222" n="1">
+                                 <syl xml:id="syl-0000000938386988" con="s">lo</syl>
+                              </verse>
+                           </note>
+                        </layer>
+                     </staff>
+                     <staff xml:id="staff-0000000250250752" n="2">
+                        <layer xml:id="layer-0000000542770385" n="1">
+                           <beam xml:id="beam-0000001056136895">
+                              <note xml:id="note-0000001268522821" dur.ppq="1" dur="8" oct="2" pname="a" stem.dir="up" />
+                              <note xml:id="note-0000002147203197" dur.ppq="1" dur="8" oct="3" pname="a" stem.dir="up" />
+                           </beam>
+                           <beam xml:id="beam-0000002039769444">
+                              <note xml:id="note-0000000403740423" dur.ppq="1" dur="8" oct="4" pname="c" stem.dir="down" />
+                              <note xml:id="note-0000000156086824" dur.ppq="1" dur="8" oct="4" pname="e" stem.dir="down" />
+                           </beam>
+                           <beam xml:id="beam-0000000536059597">
+                              <note xml:id="note-0000000604623050" dur.ppq="1" dur="8" oct="4" pname="c" stem.dir="down" />
+                              <note xml:id="note-0000000920468217" dur.ppq="1" dur="8" oct="3" pname="a" stem.dir="down" />
+                           </beam>
+                        </layer>
+                     </staff>
+                     <harm xml:id="harm-0000000589782348" staff="1" tstamp="1.000000">Am</harm>
+                  </measure>
+                  <measure xml:id="measure-0000001053973785" n="16">
+                     <staff xml:id="staff-0000001972367014" n="1">
+                        <layer xml:id="layer-0000000281534507" n="1">
+                           <note xml:id="note-0000001238673383" dur.ppq="4" dur="2" oct="4" pname="d" stem.dir="up">
+                              <verse xml:id="verse-0000001966898804" n="2">
+                                 <syl xml:id="syl-0000000708602155" con="s">MELD</syl>
+                              </verse>
+                              <verse xml:id="verse-0000000919860600" n="1">
+                                 <syl xml:id="syl-0000000068213569" con="s">MELD</syl>
+                              </verse>
+                           </note>
+                           <note xml:id="note-0000001694821936" dur.ppq="2" dur="4" oct="4" pname="c" stem.dir="up">
+                              <verse xml:id="verse-0000000714553265" n="1">
+                                 <syl xml:id="syl-0000001622025903" con="s">coll-</syl>
+                              </verse>
+                              <verse xml:id="verse-0000001971137859" n="2">
+                                 <syl xml:id="syl-0000000384262497" con="s">coll-</syl>
+                              </verse>
+                           </note>
+                        </layer>
+                     </staff>
+                     <staff xml:id="staff-0000001962431835" n="2">
+                        <layer xml:id="layer-0000001458961583" n="1">
+                           <beam xml:id="beam-0000000145568335">
+                              <note xml:id="note-0000001179819616" dur.ppq="1" dur="8" oct="2" pname="g" stem.dir="up" />
+                              <note xml:id="note-0000001315604583" dur.ppq="1" dur="8" oct="3" pname="g" stem.dir="up" />
+                           </beam>
+                           <beam xml:id="beam-0000000696672085">
+                              <note xml:id="note-0000000994694626" dur.ppq="1" dur="8" oct="3" pname="b" stem.dir="down" />
+                              <note xml:id="note-0000000386079095" dur.ppq="1" dur="8" oct="4" pname="g" stem.dir="down" />
+                           </beam>
+                           <beam xml:id="beam-0000000629372369">
+                              <note xml:id="note-0000000339190427" dur.ppq="1" dur="8" oct="3" pname="b" stem.dir="up" />
+                              <note xml:id="note-0000000325398112" dur.ppq="1" dur="8" oct="3" pname="g" stem.dir="up" />
+                           </beam>
+                        </layer>
+                     </staff>
+                     <harm xml:id="harm-0000000438035200" staff="1" tstamp="1.000000">G</harm>
+                  </measure>
+                  <sb xml:id="sb-0000000145263570" />
+                  <measure xml:id="measure-0000001432536393" n="17">
+                     <staff xml:id="staff-0000001070749578" n="1">
+                        <layer xml:id="layer-0000000591375516" n="1">
+                           <note xml:id="note-0000000721568241" dur.ppq="2" dur="4" oct="3" pname="b" stem.dir="up">
+                              <verse xml:id="verse-0000000978061640" n="1">
+                                 <syl xml:id="syl-0000000580595527" con="s">ect-</syl>
+                              </verse>
+                              <verse xml:id="verse-0000001431744518" n="2">
+                                 <syl xml:id="syl-0000000136533599" con="s">ect-</syl>
+                              </verse>
+                           </note>
+                           <note xml:id="note-0000000710683885" dur.ppq="2" dur="4" oct="3" pname="a" stem.dir="up">
+                              <verse xml:id="verse-0000001064511989" n="1">
+                                 <syl xml:id="syl-0000000829775298" con="s">ion</syl>
+                              </verse>
+                              <verse xml:id="verse-0000000694963640" n="2">
+                                 <syl xml:id="syl-0000002000122369" con="s">ion</syl>
+                              </verse>
+                           </note>
+                           <note xml:id="note-0000000863843725" dur.ppq="2" dur="4" oct="3" pname="g" stem.dir="up">
+                              <verse xml:id="verse-0000000368725981" n="1">
+                                 <syl xml:id="syl-0000001778124297" con="s">of</syl>
+                              </verse>
+                              <verse xml:id="verse-0000001971904761" n="2">
+                                 <syl xml:id="syl-0000001718442177" con="s">of</syl>
+                              </verse>
+                           </note>
+                        </layer>
+                     </staff>
+                     <staff xml:id="staff-0000000923408379" n="2">
+                        <layer xml:id="layer-0000001564491908" n="1">
+                           <chord xml:id="chord-0000000601958510" dots="1" dur.ppq="6" dur="2" stem.dir="up">
+                              <note xml:id="note-0000000185857254" oct="2" pname="e" />
+                              <note xml:id="note-0000000045577535" oct="2" pname="b" />
+                              <note xml:id="note-0000000824101506" oct="3" pname="e" />
+                              <note xml:id="note-0000001822596335" oct="3" pname="g" />
+                              <note xml:id="note-0000001908457965" oct="3" pname="b" />
+                              <note xml:id="note-0000001495673355" oct="4" pname="e" />
+                           </chord>
+                        </layer>
+                     </staff>
+                     <harm xml:id="harm-0000000006546690" staff="1" tstamp="1.000000">Em</harm>
+                  </measure>
+                  <measure xml:id="measure-0000001449436759" n="18">
+                     <staff xml:id="staff-0000001927288906" n="1">
+                        <layer xml:id="layer-0000001718443271" n="1">
+                           <note xml:id="note-0000000393183493" dots="1" dur.ppq="6" dur="2" oct="3" pname="a" stem.dir="up">
+                              <verse xml:id="verse-0000000008659079" n="1">
+                                 <syl xml:id="syl-0000000298024963" con="s">mine.</syl>
+                              </verse>
+                              <verse xml:id="verse-0000001838785609" n="2">
+                                 <syl xml:id="syl-0000000244442633" con="s">mine.</syl>
+                              </verse>
+                           </note>
+                        </layer>
+                     </staff>
+                     <staff xml:id="staff-0000001145106249" n="2">
+                        <layer xml:id="layer-0000000331777554" n="1">
+                           <beam xml:id="beam-0000000070925599">
+                              <note xml:id="note-0000001306828605" dur.ppq="1" dur="8" oct="2" pname="a" stem.dir="up" />
+                              <note xml:id="note-0000000106875028" dur.ppq="1" dur="8" oct="3" pname="a" stem.dir="up" />
+                           </beam>
+                           <beam xml:id="beam-0000000976057857">
+                              <note xml:id="note-0000001640527665" dur.ppq="1" dur="8" oct="4" pname="c" stem.dir="down" />
+                              <note xml:id="note-0000000597679911" dur.ppq="1" dur="8" oct="4" pname="e" stem.dir="down" />
+                           </beam>
+                           <beam xml:id="beam-0000000680074358">
+                              <note xml:id="note-0000001007310110" dur.ppq="1" dur="8" oct="4" pname="c" stem.dir="down" />
+                              <note xml:id="note-0000000127068395" dur.ppq="1" dur="8" oct="3" pname="a" stem.dir="down" />
+                           </beam>
+                        </layer>
+                     </staff>
+                     <harm xml:id="harm-0000002121145711" staff="1" tstamp="1.000000">Am</harm>
+                  </measure>
+                  <measure xml:id="measure-0000000118019162" right="end" n="19">
+                     <staff xml:id="staff-0000002068062428" n="1">
+                        <layer xml:id="layer-0000001092721310" n="1">
+                           <mRest xml:id="mrest-0000000727578592" />
+                        </layer>
+                     </staff>
+                     <staff xml:id="staff-0000001700515312" n="2">
+                        <layer xml:id="layer-0000000046994116" n="1">
+                           <beam xml:id="beam-0000000400487580">
+                              <note xml:id="note-0000001448851085" dur.ppq="1" dur="8" oct="3" pname="e" stem.dir="up" />
+                              <note xml:id="note-0000001054564786" dur.ppq="1" dur="8" oct="3" pname="a" stem.dir="up" />
+                           </beam>
+                           <beam xml:id="beam-0000000268568430">
+                              <note xml:id="note-0000001791168986" dur.ppq="1" dur="8" oct="4" pname="c" stem.dir="down" />
+                              <note xml:id="note-0000000268673728" dur.ppq="1" dur="8" oct="4" pname="e" stem.dir="down" />
+                           </beam>
+                           <beam xml:id="beam-0000001161795415">
+                              <note xml:id="note-0000000178217874" dur.ppq="1" dur="8" oct="4" pname="c" stem.dir="down" />
+                              <note xml:id="note-0000001488388639" dur.ppq="1" dur="8" oct="3" pname="a" stem.dir="down" />
+                           </beam>
+                        </layer>
+                     </staff>
+                     <harm xml:id="harm-0000002071790971" staff="1" tstamp="1.000000">Am</harm>
+                  </measure>
+               </section>
+            </score>
+         </mdiv>
+      </body>
+   </music>
+</mei>
