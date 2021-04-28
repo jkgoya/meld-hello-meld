@@ -665,6 +665,12 @@ export default class SelectableScoreApp extends Component {
                 //element.classList.add("cueMedia");
               }
               break;
+            case "recording":
+              if (bodies.length) {
+                element.classList.add("focus-" + annoIdFragment);
+                //element.classList.add("cueMedia");
+              }
+              break;
             case "trompa:playlist": {
               return;
             }

@@ -581,6 +581,7 @@ class AnnotationItem extends React.Component {
     const creator = this.props.annotation.creator || "unknown";
 
     switch (motivation) {
+
       case "describing":
         return (
           <div
@@ -594,6 +595,7 @@ class AnnotationItem extends React.Component {
             {replyButtonsCluster}
           </div>
         );
+
       case "linking":
         if (bodyL.startsWith("http")) {
           return (
@@ -675,6 +677,7 @@ class AnnotationItem extends React.Component {
             {replyButtonsCluster}
           </div>
         );
+
       case "trompa:cueImage":
         return (
           <div
@@ -708,6 +711,31 @@ class AnnotationItem extends React.Component {
             {replyButtonsCluster}
           </div>
         );
+
+      case "recording":
+        return (
+          <div
+            className="rootAnno annoItem"
+            data-target={target}
+            data-self-id={selfId}
+          >
+            {""}
+            {commonAnnoComponents}
+            {
+              <a href={bodyMedia} target="_blank" rel="noopener noreferrer">
+                <audio
+                    controls
+                    src={bodyMedia}
+                    >
+                        Your browser does not support the
+                        <code>audio</code> element.
+                </audio>
+              </a>
+            }
+            {replyButtonsCluster}
+          </div>
+        );
+
       case "trompa:playlist":
         return;
 

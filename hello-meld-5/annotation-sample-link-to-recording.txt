@@ -18,9 +18,6 @@
 }
 
 
-
-
-
 ## Steps to add new annotation:
 
 1. [x] Add new annotation type to `annotationSubmitter.render`;  assign value string
@@ -29,9 +26,19 @@
 
 3. [-] Add new annotation type logic to `addAnnotations` - add new render option for recording link annotation in `render` method.  NOT NEEDED: uses `this.props.annotationType !== "cueMedia"` branch of render logic.
 
-4. Look at annotation rendering in `AnnotationList`...
+4. [.] Look at annotation rendering in `AnnotationItem` (invoked by `AnnotationList`)..
+
+    - the motivation for recording annotations needed to be changed in `annotationSubmitter.submitHandler`, as used to select rendered format.
+
+5. [ ] In `selectableScoreApp.onReceiveAnnotationContainerContent` code to handle new motivation type.
+
 
 NOTE: appears to be no selection type for whole piece (e.g. no fragment).
 
-NOTE: duplicated logic between `onRefreshClick` and `onResponse` (refactor for DRY?)
+NOTE: duplicated logic between `onRefreshClick` and `onResponse` (refactor for DRY?).
+
+NOTE: new annotation motivation (currently "recording") should be reviewed.
+
+NOTE: there is still a problem that annotations are not saved in the specified container - they all end up in "public/"
+
 

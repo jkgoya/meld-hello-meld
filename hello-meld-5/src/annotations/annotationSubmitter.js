@@ -82,7 +82,7 @@ export class AnnotationSubmitter extends React.Component {
                 type:   "Sound",
                 format: "audio/mp3"
               }],
-          motivation: "linking",
+          motivation: "recording",
           created: new Date().toISOString(),
           creator: this.props.creator,
         };
