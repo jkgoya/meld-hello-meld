@@ -17,3 +17,21 @@
   “@id”: “@@@@”
 }
 
+
+
+
+
+## Steps to add new annotation:
+
+1. [x] Add new annotation type to `annotationSubmitter.render`;  assign value string
+
+2. [x] Add new annotation type in `annotationSubmitter.submitHandler`
+
+3. [-] Add new annotation type logic to `addAnnotations` - add new render option for recording link annotation in `render` method.  NOT NEEDED: uses `this.props.annotationType !== "cueMedia"` branch of render logic.
+
+4. Look at annotation rendering in `AnnotationList`...
+
+NOTE: appears to be no selection type for whole piece (e.g. no fragment).
+
+NOTE: duplicated logic between `onRefreshClick` and `onResponse` (refactor for DRY?)
+

@@ -19,12 +19,12 @@ export default function SolidWrapper(props) {
   });
   const userPOD = useLDflexValue("user.storage");
   const userId = useLDflexValue("user");
-  const [userInput, setUserInput] = useState("private/");
+  const [userInput, setUserInput] = useState("public/");
   const handleUserInput = (e) => {
     // eslint-disable-next-line
     const containerPath = e.target.value
       ? setUserInput(e.target.value)
-      : "private/";
+      : "public/Hello_MELD/";
   };
   return (
     <div id="authWrapper">
@@ -67,7 +67,7 @@ export default function SolidWrapper(props) {
           <input
             title="enter your preferred POD folder"
             type="text"
-            placeholder="private/"
+            placeholder="public/Hello_MELD/"
             onChange={handleUserInput}
             className="sizedTextBox"
           />

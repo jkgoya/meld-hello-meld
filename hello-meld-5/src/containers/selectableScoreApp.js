@@ -32,8 +32,7 @@ export default class SelectableScoreApp extends Component {
       selection: [],
       annotationType: "describing",
       placeholder: "Add your annotation...",
-      uri:
-        "https://raw.githubusercontent.com/trompamusic-encodings/Mahler_Symphony_No4_Doblinger-4hands/master/Mahler_No4_1-Doblinger-4hands.mei",
+      uri: "Hello_MELD.mei",
       selectorString: "",
       buttonContent: "Submit to your Solid POD",
       replyAnnotationTarget: [],
@@ -279,6 +278,7 @@ export default class SelectableScoreApp extends Component {
   };
 
   onResponse(resp) {
+    console.log("@@@@ SelectableScoreApp.onResponse");
     console.log(resp);
     if (resp.status === 201) {
       this.setState(
@@ -288,6 +288,7 @@ export default class SelectableScoreApp extends Component {
         () => {
           let loading = document.querySelector(".loading");
           loading.classList.remove("hidden");
+          console.log("@@@@ SelectableScoreApp.onResponse setState callback");
           this.setState({
             toggleAnnotationRetrieval: false,
             annotationType: "describing",
@@ -714,6 +715,7 @@ export default class SelectableScoreApp extends Component {
   }
 
   render() {
+    console.log("@@@@ SelectableScoreApp.render");
     const modal = this.state.helpWindowIsActive ? (
       <Modal
         isOpen={this.state.helpWindowIsActive}
@@ -814,9 +816,10 @@ export default class SelectableScoreApp extends Component {
     ) : (
       false
     );
+    // App pane render ...
     return (
       <div>
-        {this.state.isClicked === true && (
+        {this.state.isClicked === true && (  // If MEI URI has been submitted
           <div>
             <div className="scoreContainer">
               <div className="annotationBoxesContainer" />
@@ -924,14 +927,15 @@ export default class SelectableScoreApp extends Component {
               </div>
             </div>
           </div>
-        )}
+        )} 
+        {/* End selectable score element and associated controls */}
         {this.state.showMEIInput && (
           <div>
             <p>Select your MEI file:</p>
             <input
               type="text"
               onChange={this.onMEIInputChange}
-              placeholder="mahler four hands rendition..."
+              placeholder={this.state.uri}
               className="sizedTextBox"
             />
 
@@ -950,6 +954,7 @@ export default class SelectableScoreApp extends Component {
           selectorString={this.state.selectorString}
           handleStringChange={this.handleStringChange}
         />
+
         {/*annotation submission component*/}
         <AnnotationSubmitter
           onAnnoTypeChange={this.onAnnoTypeChange}

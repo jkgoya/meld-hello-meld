@@ -14,7 +14,7 @@ import SelectableScoreWrapper from './containers/selectableScoreWrapper';
 
 ReactDOM.render(
   <div>
-    <h1>Hello MELD (5)</h1>
+    {/* <h1>Hello MELD (5)</h1> */}
     <div className="wrapscorepane">
       <React.StrictMode>
         <SelectableScoreWrapper

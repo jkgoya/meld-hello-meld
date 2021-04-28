@@ -29,6 +29,7 @@ export class Addannotation extends React.Component {
       value,
       seconds,
     };
+    console.log("@@@@ addAnnotation.render "+value);
 
     return (
       <div>

@@ -7,7 +7,9 @@ export class AnnotationSubmitter extends React.Component {
   constructor(props) {
     super(props);
     this.textArea = React.createRef();
-  }
+    console.log("@@@@ AnnotationSubmitter.constructor");
+  };
+
   submitHandler = (handlerArgs) => {
     this.textArea.current.wipeState();
     //adds different annotations based on selection
@@ -68,6 +70,23 @@ export class AnnotationSubmitter extends React.Component {
           creator: this.props.creator,
         };
 
+      case "recording":
+        return {
+          "@context": "http://www.w3.org/ns/anno.jsonld",
+          target: this.props.selection.map((elem) => {
+            return { id: this.props.uri + "#" + elem.getAttribute("id") };
+          }), //this takes the measure id selected by the user
+          type: "Annotation",
+          body: [
+              { id:     value,    //this takes the recording link
+                type:   "Sound",
+                format: "audio/mp3"
+              }],
+          motivation: "linking",
+          created: new Date().toISOString(),
+          creator: this.props.creator,
+        };
+
       case "playlist":
         return {
           "@context": "http://www.w3.org/ns/anno.jsonld",
@@ -100,6 +119,7 @@ export class AnnotationSubmitter extends React.Component {
   };
 
   render() {
+    console.log("@@@@ AnnotationSubmitter.render");
     return (
       <div className="App">
         <div className="container">
@@ -150,6 +170,18 @@ export class AnnotationSubmitter extends React.Component {
               checked={this.props.annotationType === "image"}
             />
             Image
+          </label>
+          <label>
+            <input
+              title="links a recording of the displayed MEI"
+              type="radio"
+              value="recording"
+              name="annotationType"
+              placeholder="Insert your recording link..."
+              onChange={this.props.onAnnoTypeChange}
+              checked={this.props.annotationType === "recording"}
+            />
+            Recording
           </label>
           <label>
             <input

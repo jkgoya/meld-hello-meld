@@ -17,7 +17,7 @@ export default class SelectableScoreWrapper extends Component {
     super(props);
     // MEI_URI: Can be a full URI, e.g. obtained from the TROMPA Contributor Environment
     this.state = {
-      MEI_URI: "Mahler.mei",
+      MEI_URI: "Hello_MELD.mei",
     };
     this.store = createStore(reducers);
   }
@@ -26,11 +26,11 @@ export default class SelectableScoreWrapper extends Component {
     return (
       <Provider store={createStoreWithMiddleware(reducers)}>
         <SolidWrapper
-          uri={this.state.MEI_URI}
+          //uri={this.state.MEI_URI}
           //vrvOptions={this.props.vrvOptions}
-          handleMEIInput={this.handleMEIInput}
-          onChange={this.onChange}
-          value={this.state.value}
+          //handleMEIInput={this.handleMEIInput}
+          //onChange={this.onChange}
+          //value={this.state.value}
           // zoomIn={this.props.zoomIn}
           // zoomOut={this.props.zoomOut}
         />
