@@ -32,7 +32,7 @@ To review what we did and highlight any lessons arising from the week for future
 
 ### 2. "Gather data": summarise what we did, and any particular issues that were noted (GK, MS)
 
-1. selectable-score-demo to hello meld framework as hello-meld-4.  Familiarization with code and supporting environment.
+- (1) selectable-score-demo to hello meld framework as hello-meld-4.  Familiarization with code and supporting environment.
 
     MS notes: selectable score relies on a drag-select app, which sometimes throws up errors.
 
@@ -40,7 +40,7 @@ To review what we did and highlight any lessons arising from the week for future
 
     We had some problems with `npm install` - I thought it was hanging, but turns out it was just very slow.   May have been network performance related.
 
-2. music-scholars-annotator
+- (2) music-scholars-annotator
 
     Got this running in out local environments. Fairly quick and straightforward.
 
@@ -52,7 +52,7 @@ To review what we did and highlight any lessons arising from the week for future
 
     Understanding the code was sometimes difficult, because of having to trace through many layers of abstraction.
 
-3. Add a new annotation type to `hello-meld-5`
+- (3) Add a new annotation type to `hello-meld-5`
 
     We worked as a pair to add a new annotation type to `hello-meld-5`.  This phase mostly went smoothly.
 
@@ -60,7 +60,7 @@ To review what we did and highlight any lessons arising from the week for future
 
     We were following paths we explored in previous step;  the pair working here was a very effective knowledge transfer process.  Used screen sharing in a Zoom conference; MS replicated the work locally as we proceeded.
 
-4. Add another new annotation type to `hello-meld-5`
+- (4) Add another new annotation type to `hello-meld-5`
 
     Subsequently MS worked alone to add another new annotation type to `hello-meld-5`
 
