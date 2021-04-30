@@ -1,4 +1,4 @@
-# hello-meld-4/5 retrospective
+# `hello-meld-4`/`hello-meld-5` retrospective
 
 This note is a retrospective review of a 1-week sprint, which was a collaboration between the SSI3 (DH software sustainability), BitH (Beethoven in the House) and Music Encoding and Linked Data (MELD) activities.
 
@@ -32,7 +32,7 @@ To review what we did and highlight any lessons arising from the week for future
 
 ### 2. "Gather data": summarise what we did, and any particular issues that were noted (GK, MS)
 
-(a) selectable-score-demo to hello meld framework as hello-meld-4.  Familiarization with code and supporting environment.
+a. selectable-score-demo to hello meld framework as hello-meld-4.  Familiarization with code and supporting environment.
 
     MS notes: selectable score relies on a drag-select app, which sometimes throws up errors.
 
@@ -40,7 +40,7 @@ To review what we did and highlight any lessons arising from the week for future
 
     We had some problems with `npm install` - I thought it was hanging, but turns out it was just very slow.   May have been network performance related.
 
-(b) music-scholars-annotator
+b. music-scholars-annotator
 
     Got this running in out local environments. Fairly quick and straightforward.
 
@@ -53,7 +53,7 @@ To review what we did and highlight any lessons arising from the week for future
     Understanding the code was sometimes difficult, because of having to trace through many layers of abstraction.
 
 
-(c) Add a new annotation type to `hello-meld-5`
+c. Add a new annotation type to `hello-meld-5`
 
     We worked as a pair to add a new annotation type to `hello-meld-5`.  This phase mostly went smoothly.
 
@@ -62,7 +62,7 @@ To review what we did and highlight any lessons arising from the week for future
     We were following paths we explored in previous step;  the pair working here was a very effective knowledge transfer process.  Used screen sharing in a Zoom conference; MS replicated the work locally as we proceeded.
 
 
-(d) Add another new annotation type to `hello-meld-5`
+d. Add another new annotation type to `hello-meld-5`
 
     Subsequently MS worked alone to add another new annotation type to `hello-meld-5`
 
@@ -94,7 +94,7 @@ SSI3 report:  add some thoughts about the needs of engineer time - combining sho
 Callbacks and promises: local vs global simplification issues?  (Promises harder to understand locally, but lead to easier-to-understand global structures.)
 
 
-4. Next steps
+### 4. Next steps
 
 MS to look at importing elements used by music-scholars-annotator into a new MELD application, to learn more about the process of creating an application around the MELD core features.
 
@@ -108,16 +108,16 @@ Further SSI3:
 - Design/document MELD abstractions?   This is a big sustainability issue?  Looking at issues of composing abstractions.  Patterns to use?
 
 
-5. Wrap up: Summarize what will happen with what has been discussed in this meeting (all)
+### 5. Wrap up (all)
+
+This meeting has raised points that will feed into the following activities/actions
 
 (a) SSI report updates
 
-(b) circulate link to this document
+(b) Circulate link to this document
 
-(c) Raise issues for MELD/music-scholars-annotation project
+(c) Raise issues for MELD/music-scholars-annotation projects
 
-(d) anticipating that lessons will be carried back to BitH project
-
-
+(d) We anticipating that lessons will be carried back to BitH project
 
 
