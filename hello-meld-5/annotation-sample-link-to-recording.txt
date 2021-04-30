@@ -35,8 +35,6 @@
 
 NOTE: appears to be no selection type for whole piece (e.g. no fragment).
 
-NOTE: duplicated logic between `onRefreshClick` and `onResponse` (refactor for DRY?).
-
 NOTE: new annotation motivation (currently "recording") should be reviewed.
 
 NOTE: there is still a problem that annotations are not saved in the specified container - they all end up in "public/".  LATER: see line 22 in `solidWrapper.js`.  FIXED: need to also set state value in `solidWrapper.js` - fairly obvious, but one I missed first time around.
@@ -49,7 +47,11 @@ NOTE: in `selectablScoreApp.js` it's not clear why the motivation switch logic i
 
 NOTE: try testing app against new inrupt Solid pod server at https://signup.pod.inrupt.com/
 
-NOTE: `music-scholars-annotation` code structure seems to entangle a number of different concerns.  A particular thought I had was that each annotation type should be implemented as a separate React element, with all of the associated logic kep in a single module.  Then, at the level of (something like) `annotationbSubmitter.js`/`annotationItem.js`, the appropriate annotation type element would be selected, and avoid the need for further tests.  Maybe use an "annotation object factory" element to encapsulate all the annotation switching logic?
+NOTE: `music-scholars-annotation` code structure seems to entangle a number of different concerns; e.g. duplicated logic between `annotationItem.renderSwitch` and `selectableScoreApp.onReceiveAnnotationContainerContent` (refactor for DRY?).
+
+NOTE: would have liked documentation of "<SelectableScore>" abstraction used.
+
+A particular thought I had was that each annotation type should be implemented as a separate React element, with all of the associated logic keep in a single module.  Then, at the level of (something like) `annotationbSubmitter.js`/`annotationItem.js`, the appropriate annotation type element would be selected, and avoid the need for further tests.  Maybe use an "annotation object factory" element to encapsulate all the annotation switching logic?
 
 
 
