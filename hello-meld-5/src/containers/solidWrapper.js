@@ -19,7 +19,7 @@ export default function SolidWrapper(props) {
   });
   const userPOD = useLDflexValue("user.storage");
   const userId = useLDflexValue("user");
-  const [userInput, setUserInput] = useState("public/");
+  const [userInput, setUserInput] = useState("public/Hello_MELD/");
   const handleUserInput = (e) => {
     // eslint-disable-next-line
     const containerPath = e.target.value

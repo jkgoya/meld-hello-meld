@@ -24,13 +24,13 @@
 
 2. [x] Add new annotation type in `annotationSubmitter.submitHandler`
 
-3. [-] Add new annotation type logic to `addAnnotations` - add new render option for recording link annotation in `render` method.  NOT NEEDED: uses `this.props.annotationType !== "cueMedia"` branch of render logic.
+3. [-] Add new annotation type logic to `addAnnotations` - add new render option for recording link annotation in `render` method.  NOT NEEDED: uses `this.props.annotationType !== "cueMedia"` branch of render logic, so nothing more to do here.
 
-4. [.] Look at annotation rendering in `AnnotationItem` (invoked by `AnnotationList`)..
+4. [x] Look at annotation rendering in `AnnotationItem` (invoked by `AnnotationList`)..
 
     - the motivation for recording annotations needed to be changed in `annotationSubmitter.submitHandler`, as used to select rendered format.
 
-5. [ ] In `selectableScoreApp.onReceiveAnnotationContainerContent` code to handle new motivation type.
+5. [x] In `selectableScoreApp.onReceiveAnnotationContainerContent` code to handle new motivation type.
 
 
 NOTE: appears to be no selection type for whole piece (e.g. no fragment).
@@ -39,6 +39,7 @@ NOTE: duplicated logic between `onRefreshClick` and `onResponse` (refactor for D
 
 NOTE: new annotation motivation (currently "recording") should be reviewed.
 
-NOTE: there is still a problem that annotations are not saved in the specified container - they all end up in "public/"
+NOTE: there is still a problem that annotations are not saved in the specified container - they all end up in "public/".  LATER: see line 22 in `solidWrapper.js`.  FIXED: need to also set state value in `solidWrapper.js` - fairly obvious, but one I missed first time around.
 
+NOTE: meld-cli-tool needs better handling/reporting of authentication failure.  It seems that access to the Solid directory fails unless there is an explicit ACL set of the new folder.
 
