@@ -48,3 +48,8 @@ NOTE: in `annotationItem.js`, about line 600, code does crude attempt at URI res
 NOTE: in `selectablScoreApp.js` it's not clear why the motivation switch logic is required - it appears to be setting class values on annotations.  E.g., why isn't this handled in `annotationItem.js`?
 
 NOTE: try testing app against new inrupt Solid pod server at https://signup.pod.inrupt.com/
+
+NOTE: `music-scholars-annotation` code structure seems to entangle a number of different concerns.  A particular thought I had was that each annotation type should be implemented as a separate React element, with all of the associated logic kep in a single module.  Then, at the level of (something like) `annotationbSubmitter.js`/`annotationItem.js`, the appropriate annotation type element would be selected, and avoid the need for further tests.  Maybe use an "annotation object factory" element to encapsulate all the annotation switching logic?
+
+
+
