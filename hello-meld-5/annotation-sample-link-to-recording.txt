@@ -43,3 +43,8 @@ NOTE: there is still a problem that annotations are not saved in the specified c
 
 NOTE: meld-cli-tool needs better handling/reporting of authentication failure.  It seems that access to the Solid directory fails unless there is an explicit ACL set of the new folder.
 
+NOTE: in `annotationItem.js`, about line 600, code does crude attempt at URI resolution.  Better approach would be to use a URL handling library toi do the resolution properly.  @@@find URL resolution library in code - in rdflib?
+
+NOTE: in `selectablScoreApp.js` it's not clear why the motivation switch logic is required - it appears to be setting class values on annotations.  E.g., why isn't this handled in `annotationItem.js`?
+
+NOTE: try testing app against new inrupt Solid pod server at https://signup.pod.inrupt.com/
