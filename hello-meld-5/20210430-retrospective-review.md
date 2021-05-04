@@ -42,9 +42,9 @@ To review what we did and highlight any lessons arising from the week for future
 
 - (2) music-scholars-annotator
 
-    Got this running in out local environments. Fairly quick and straightforward.
+    Got this running in our local environments. Fairly quick and straightforward.
 
-    Layout seemed a bit messy -browser issues? - layout logic not fully thought out
+    Layout seemed a bit messy - browser issues? - layout logic not fully thought out
 
     Created `hello-meld-5` initial stab based on `music-scholars-annotator`
 
@@ -79,7 +79,7 @@ Document new abstractions created.  Also testing. (Introducing new abstractions 
 
 Zoom screen-sharing was very effective as a pair programming technique.
 
-The pattern we've followed has been a series of short workshops followed by this week's longer sprint seems to have been very effective.  Reinforced value of simple early "Hello MELD" apps.  MELDfests didn't really help - difficult for outsiders to come in (though this was not what they were intended to achieve).   Generally, sprints like this do seem to be a useful way of making technical progress and transferring knowledge.
+For this overall project, the pattern we've followed has been a series of short workshops followed by this week's longer sprint.  This seems to have been very effective.  Reinforced value of simple early "Hello MELD" apps.  MELD fests didn't really help - difficult for outsiders to come in (though this was not what they were intended to achieve).   Generally, sprints like this do seem to be a useful way of making technical progress and transferring knowledge.
 
 DL: overall, this long workshop (sprint) has been as helpful as we hoped it would be.
 
