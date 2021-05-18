@@ -33,25 +33,25 @@
 5. [x] In `selectableScoreApp.onReceiveAnnotationContainerContent` code to handle new motivation type.
 
 
-NOTE: appears to be no selection type for whole piece (e.g. no fragment).
+NOTE: appears to be no selection type for whole piece (e.g. no fragment). [POSTED in [music-scholars-annotator issue](https://github.com/trompamusic/music-scholars-annotator/issues/9).]
 
 NOTE: new annotation motivation (currently "recording") should be reviewed.
 
-NOTE: there is still a problem that annotations are not saved in the specified container - they all end up in "public/".  LATER: see line 22 in `solidWrapper.js`.  FIXED: need to also set state value in `solidWrapper.js` - fairly obvious, but one I missed first time around.
+NOTE: there is still a problem that annotations are not saved in the specified container - they all end up in "public/".  LATER: see line 22 in `solidWrapper.js`.  FIXED: need to also set state value in `solidWrapper.js` - fairly obvious, but one I missed first time around. [FIXED]
 
-NOTE: meld-cli-tool needs better handling/reporting of authentication failure.  It seems that access to the Solid directory fails unless there is an explicit ACL set of the new folder.
+NOTE: meld-cli-tool needs better handling/reporting of authentication failure.  It seems that access to the Solid directory fails unless there is an explicit ACL set of the new folder. [DONE]
 
-NOTE: in `annotationItem.js`, about line 600, code does crude attempt at URI resolution.  Better approach would be to use a URL handling library toi do the resolution properly.  @@@find URL resolution library in code - in rdflib?
+NOTE: in `annotationItem.js`, about line 600, code does crude attempt at URI resolution.  Better approach would be to use a URL handling library toi do the resolution properly.  rdflib.js includes https://github.com/linkeddata/rdflib.js/blob/master/src/uri.ts.  Or https://nodejs.org/api/url.html or even https://developer.mozilla.org/en-US/docs/Web/API/URL/URL may be better options.  [POSTED in [music-scholars-annotator issue](https://github.com/trompamusic/music-scholars-annotator/issues/9).]
 
-NOTE: in `selectablScoreApp.js` it's not clear why the motivation switch logic is required - it appears to be setting class values on annotations.  E.g., why isn't this handled in `annotationItem.js`?
+NOTE: in `selectablScoreApp.js` it's not clear why the motivation switch logic is required - it appears to be setting class values on annotations.  E.g., why isn't this handled in `annotationItem.js`?  [POSTED in [music-scholars-annotator issue](https://github.com/trompamusic/music-scholars-annotator/issues/9).]
 
-NOTE: try testing app against new inrupt Solid pod server at https://signup.pod.inrupt.com/
+NOTE: try testing app against new Inrupt Solid pod server at https://signup.pod.inrupt.com/  [DONE.  Problems noted.  See https://github.com/trompamusic/music-scholars-annotator/issues/9]
 
-NOTE: `music-scholars-annotation` code structure seems to entangle a number of different concerns; e.g. duplicated logic between `annotationItem.renderSwitch` and `selectableScoreApp.onReceiveAnnotationContainerContent` (refactor for DRY?).
+NOTE: would have liked documentation of "<SelectableScore>" abstraction used.  [NOTED in SSI report].
 
-NOTE: would have liked documentation of "<SelectableScore>" abstraction used.
+NOTE: `music-scholars-annotation` code structure seems to entangle a number of different concerns; e.g. duplicated logic between `annotationItem.renderSwitch` and `selectableScoreApp.onReceiveAnnotationContainerContent` -- refactor for [DRY](https://en.wikipedia.org/wiki/Don%27t_repeat_yourself)?  [POSTED in [music-scholars-annotator issue](https://github.com/trompamusic/music-scholars-annotator/issues/9).]
 
-A particular thought I had was that each annotation type should be implemented as a separate React element, with all of the associated logic keep in a single module.  Then, at the level of (something like) `annotationbSubmitter.js`/`annotationItem.js`, the appropriate annotation type element would be selected, and avoid the need for further tests.  Maybe use an "annotation object factory" element to encapsulate all the annotation switching logic?
+A particular thought I had was that each annotation type should be implemented as a separate React element, with all of the associated logic keep in a single module.  Then, at the level of (something like) `annotationbSubmitter.js`/`annotationItem.js`, the appropriate annotation type element would be selected, and avoid the need for further tests.  Maybe use an "annotation object factory" element to encapsulate all the annotation switching logic?  [POSTED in [music-scholars-annotator issue](https://github.com/trompamusic/music-scholars-annotator/issues/9).]
 
 
 
