@@ -23,14 +23,41 @@ import ReduxApp from './ReduxApp';
 
 const createStoreWithMiddleware = applyMiddleware(thunk, ReduxPromise)(createStore);
 
-ReactDOM.render( 
-  <div>
-    <React.StrictMode>
-      <ReduxApp />
-    </React.StrictMode>
-  </div>
-  , document.getElementById('root') );
+// import verovio_req from 'verovio' ;
+// global.verovio = verovio_req ;
 
+var verovio  = require( 'verovio' );
+//global.verovio = verovio_req ;
+
+// See: https://stackoverflow.com/a/15880109
+// var globalscope = (function(){ return this }).call(null) ;
+
+// See: https://stackoverflow.com/questions/9107240
+//var globalscope = (function () { return this || (1, eval)('this'); }()) ;
+
+// globalscope.verovio = verovio_req ;
+
+function renderApp()
+{
+    ReactDOM.render( 
+      <div>
+        <React.StrictMode>
+          <ReduxApp />
+        </React.StrictMode>
+      </div>
+      , document.getElementById('root') );  
+}
+
+/* Wait for verovio to load */
+verovio.module.onRuntimeInitialized = function ()
+{
+    // var vrvToolkit = new verovio_req.toolkit();
+    // global.verovio = verovio_req ;
+    // window.verovio = verovio_req ;
+    console.log("global.verovio         "+verovio) ;
+    console.log("global.verovio.toolkit "+verovio.toolkit) ;
+    renderApp() ;
+}
 
 /*
 ReactDOM.render( 

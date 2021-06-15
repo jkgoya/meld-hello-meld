@@ -12,14 +12,15 @@
     "build": "babel src --out-dir lib",
     "build-dev": "babel src --out-dir lib --source-maps inline",
     "test1": "node --experimental-vm-modules node_modules/.bin/jest",
-    "test": "jest  --env=jsdom"
+    "test": "jest --env=jsdom"
   },
   "dependencies": {
     "axios": "^0.21.1",
     "immutability-helper": "^3.1.1",
-    "jsonld": "^1.8.0",
+    "jsonld": "^1.8.1",
     "jsum": "^0.1.4",
-    "meld-clients-core": "oerc-music/meld-clients-core#unblacking-newdeps",
+    "ky": "^0.25.1",
+    "meld-clients-core": "github:oerc-music/meld-clients-core#verovio-npm",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-redux": "^7.2.2",
@@ -29,12 +30,6 @@
     "redux-thunk": "^2.3.0",
     "solid-auth-client": "^2.5.4",
     "verovio": "^3.3.0"
-  },
-  "notDependencies": {
-    "meld-clients-core": "file:../../meld-clients-core"
-  },
-  "peerDeependenmcies": {
-    "react": "^17.0.1"
   },
   "devDependencies": {
     "@babel/cli": "^7.12.10",
